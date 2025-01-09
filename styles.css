@@ -1,0 +1,359 @@
+:root {
+    /* Variáveis de cores */
+    --primary-color: #004d00;
+    --secondary-color: #004d00;
+    --accent-color: #004d00;
+    --text-color: #333;
+    --background-color: #ffffff;
+    --border-color: #ccc;
+    --footer-bg-color: #004d00;
+    --footer-text-color: #ffffff;
+}
+
+body {
+    font-family: "League Spartan", serif;
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+header {
+    background: var(--background-color);
+    border-bottom: 2px solid var(--border-color);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo span {
+    font-size: 22px;
+    font-weight: bold;
+    font-family: "Roboto Condensed", serif;
+}
+
+header .logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+.form-section {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.form-section h2 {
+    color: var(--primary-color);
+    font-size: 2rem;
+}
+
+.form-section h2 span {
+    color: var(--secondary-color);
+}
+
+.form-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.form-section ul li {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+
+.form-section a.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: var(--secondary-color);
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background 0.3s;
+}
+
+.form-section a.button:hover {
+    background: var(--accent-color);
+}
+
+.mobile-preview {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Rodapé */
+.footer {
+    background: var(--primary-color);
+    color: var(--footer-text-color);
+    padding: 40px 20px;
+    font-size: 0.9rem;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.footer-logo {
+    flex: 1 1 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.footer-logo img {
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    display: flex;
+    flex: 1 1 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-links div {
+    flex: 1 1 calc(10% - 20px);
+    margin: 10px;
+}
+
+.footer-links > div:not(:last-child) {
+    border-right: 1px solid #0a580a;
+}
+
+.footer-links h4 {
+    color: white;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 5px;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: var(--footer-text-color);
+}
+
+.footer-links ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid var(--footer-text-color);
+    padding-top: 10px;
+}
+
+.footer-bottom a {
+    color: var(--footer-text-color);
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a i {
+    width: 24px;
+    height: 24px;
+    margin: 0 5px;
+}
+
+
+.banner-slider {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+
+.banner-slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+    font-size: 2rem;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+}
+
+.banner-slide.active {
+    opacity: 1;
+}
+
+.banner-text {
+    text-align: center;
+}
+
+.banner-text h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.banner-text p {
+    font-size: 1.5rem;
+}
+
+.banner-slider .slider-controls {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.banner-slider .slider-controls button {
+    width: 15px;
+    height: 15px;
+    border: none;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.banner-slider .slider-controls button.active {
+    background-color: var(--accent-color);
+}
+
+.testimonial-section {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.testimonial-section h2 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.testimonial-slider {
+    position: relative;
+    overflow: hidden;
+}
+
+.testimonial {
+    display: none;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.testimonial.active {
+    display: block;
+}
+
+.testimonial p {
+    font-style: italic;
+    margin: 10px 0 20px;
+}
+
+.testimonial .author {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.testimonial-section .slider-controls {
+    margin-top: 20px;
+}
+
+.testimonial-section .slider-controls button {
+    background-color: var(--primary-color);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+.accordion {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-item {
+    border-top: 1px solid #ddd;
+}
+
+.accordion-item:first-child {
+    border-top: none;
+}
+
+.accordion-header {
+    padding: 15px;
+    cursor: pointer;
+    background-color: #f4f4f4;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.accordion-header:hover {
+    background-color: #eaeaea;
+}
+
+.accordion-content {
+    padding: 15px;
+    display: none;
+    background-color: #fff;
+}
+
+.accordion-content.open {
+    display: block;
+}
+
