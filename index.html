@@ -1,476 +1,1373 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Renkai Internacional</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./styles.css">
-</head>
-<body>
-    <header>
-        <div class="logo">
-            <img src="./public/logo.png" alt="Renkai Internacional">
-            <span>Renkai Internacional</span>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#about">Sobre nós</a></li>
-                <li><a href="#contact">Contato</a></li>
-                <li><a href="#faq">Ajuda</a></li>
-                <li><a href="#testimonial">Depoimentos</a></li>
-                <li><a href="#philosofy">Nossa filosofia</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="testimonial" class="form-section testimonial-section">
-            <h2>Depoimentos</h2>
-            <div class="testimonial-slider">
-                <div class="testimonial active">
-                    <p>"Achei genial a metodologia das acumulações, dá realmente para ver nossa evolução praticando, isso me mantém motivado ao mesmo tempo que percebo os efeitos na minha mente a cada ciclo e troca de Manto."</p>
-                    <div class="author">Maria Clara Fonseca, 27 anos, Belo Horizonte - MG</div>
-                </div>
-                <div class="testimonial">
-                    <p>"Sou jovem, mas sempre me senti perdida. Na Renkai, encontrei uma filosofia que me dá direção. As práticas de shamatha e do mantra de Chenrezig me ajudaram a controlar minhas emoções e finalmente encontrei respostas para perguntas que sempre permaneciam vazias."</p>
-                    <div class="author">Juliana Reis Barbosa, 19 anos, São Paulo - SP</div>
-                </div>
-                <div class="testimonial">
-                    <p>"Minha vida estava desmoronando emocionalmente quando encontrei a Renkai. Hoje, depois de fazer parte desse movimento tão lindo, consigo lidar com meus próprios desafios e ajudar os outros. Até minha vida financeira mudou, com maior clareza para tomar decisões."</p>
-                    <div class="author">Cláudia Lima Torres, 48 anos, Manaus - AM</div>
-                </div>
 
-                <div class="testimonial">
-                    <p>  "Participar da Renkai foi a melhor decisão que tomei. As práticas me ensinaram a ter compaixão e paciência, o que transformou meu casamento. Nunca imaginei que a espiritualidade pudesse ser tão prática."</p>
-                    <div class="author">Rafael Mendes Costa, 32 anos, Florianópolis - SC</div>
-                </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Renkai Internacional</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet">
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+            rel="stylesheet">
+        <link rel="stylesheet" href="./styles.css">
+        <link rel="shortcut icon" href="./public/logo.png" type="image/x-icon">
+    </head>
 
-                    <div class="testimonial">
-                        <p>  "Na Renkai, encontrei a força para lidar com a perda de um ente querido. As meditações e as compreensões que tive com os ensinamentos que eles transmitem me deram resiliência e me ensinaram a valorizar a vida de uma forma mais profunda."</p>
-                        <div class="author">Beatriz Araújo Silva, 45 anos, Goiânia - GO</div>
-                </div>   
-                
-                <div class="testimonial">
-                    <p> "Lutava com depressão há anos e nenhuma abordagem parecia ajudar. Na Renkai, encontrei um passo a passo claro e eficaz. A prática Renkai mudou minha percepção sobre o sofrimento, e o apoio da irmandade espiritual me trouxe esperança real".</p>
-                    <div class="author">Larissa Andrade Costa, 36 anos, Fortaleza - CE</div>
-                        
-                </div> 
-                <div class="testimonial">
-                    <p> "Eu vivia em constante ansiedade, incapaz de encontrar paz, todo dia parecia um peso. As práticas Renkai  trouxeram calma e clareza à minha mente. Hoje, não apenas superei a ansiedade, mas também descobri uma nova razão para viver." </p>
-                    <div class="author">Ricardo Lopes Ferreira, 40 anos, Campinas - SP</div>
-                </div>
-
-                    <div class="testimonial">
-                        <p> "Me sentia perdida em meio a tantas religiões e filosofias. Quando conheci a Renkai, tudo mudou. Eles oferecem um caminho estruturado, sem dogmas, mas com profundo significado. Pela primeira vez na vida, sinto que pertenço a algo maior."   </p>
-                        <div class="author">Ana Soares Lima, 30 anos, Brasília - DF </div>
-                    </div>
-                
-                    <div class="testimonial">
-                        <p> "Passei décadas buscando respostas para o propósito da vida. A Renkai me mostrou que o caminho não precisa ser complicado. Com passos claros e práticas acessíveis, encontrei equilíbrio, felicidade e uma verdadeira familia espiritual."</p>
-                        <div class="author">Marcos Antônio Silva, 51 anos, Belém - PA</div> 
-                    </div>
-
-                    <div class="testimonial">
-                        <p> "A sobrecarga de informações me deixava confusa e sem rumo. A Renkai me acolheu e me deu um sistema claro para evoluir. Hoje, sei onde estou e para onde quero ir, com serenidade e apoio de pessoas que compartilham da mesma busca."</p>
-                        <div class="author">Patrícia Almeida Campos, 28 anos, Vitória - ES</div>
-                    </div>
-
-                    <div class="testimonial">
-                        <p>  "Fui atraído pela promessa de um caminho espiritual estruturado e fiquei impressionado com a profundidade das práticas. A comunidade da Renkai me deu forças para superar crises emocionais e encontrar alegria no cotidiano."</p>
-                        <div class="author">Leonardo Matos Pereira, 47 anos, Natal - RN</div>
-                    </div>
-            </div> 
-        </section>
-       
-
-        <section id="about" class="form-section">
-            <h2>Quem somos</h2>
-            <h3>A missão da Renkai</h3>
-            
-            <p>
-                A Renkai internacional é um movimento Filosófico e Espiritual baseado nos ensinamentos de Buda Shakyamuni e no Karandavyuha Sutra. <br/>
-                Acreditamos que a união da filosofia com a prática constitui o caminho para a libertação do sofrimento, uma vez que somente o conhecimento intelectual <br/>
-                se torna limitado pois a verdade está alem das palavras é necessário unir filosofia e prática. <br/>
-                Nosso objetivo é guiar praticantes no caminho da libertação do samsara atraves de uma metodologia de 33 niveis representada por mantos, <br/>
-                passo a passo onde voce podera medir seu desenvolvimento  e progresso  filosófico espiritual.
-
-            </p>
-        </section>
-
-       
-        <div id="philosofy" style="text-align: center; margin: 50px;">
-            <h2 style="color: #006400;">Nossa Filosofia (a jornada do bodhisattva e liberação do sofrimento)</h2>
-        </div>
-        
-        <div style="text-align: justify; margin: 20px auto;">
-            <p>
-                Um término de relacionamento, uma quebra de alianças, desemprego, falta de dinheiro ou simplesmente dores emocionais profundas que nem você sabe explicar.
-                Tudo que buscamos é reverter essas situações porque no fundo buscamos a felicidade. Então achamos que se tudo der certo em nossa vida, se tudo sair como o esperado, então seremos felizes.
-            </p>
-            <p>
-                Mas na realidade, mesmo que tudo estivesse bem em sua vida agora, mesmo que realizasse todos os seus desejos exatamente como acha que quer, depois de um tempo, a felicidade com essas conquistas iria sumir, e então você estabeleceria novos planos, novas metas, tudo para tentar manter migalhas de alguma felicidade interna através da conquista de coisas externas.
-            </p>
-            <p>
-                A mídia, a sociedade nos manipula o tempo todo vendendo sonhos, objetos, conquistas e realizações de desejos com a falsa promessa de que quando obtivermos aquilo, aí então seremos felizes.
-            </p>
-            <p>
-                Os ensinamentos da Renkai se baseiam no desenvolvimento das 5 energias internas nas quais denominamos 5 lungs ou 5 elementos:
-                Éter, ar, fogo, água e terra. Tudo que existe no universo, inclusive o nosso próprio corpo e nossa mente é constituído desses 5 lungs (elementos).
-                A sensação de felicidade que sentimos ao obtermos alguma coisa é um modo de ativar esses 5 elementos em nossa mente, o que traz temporariamente uma sensação de felicidade. 
-            </p>
-            <p>
-                Um exemplo prático dessa ativação é quando vemos um objeto ou pessoa na qual desejamos. 
-                Ao olhar o objeto, nosso olhar brilha (ativação do elemento éter), e expandir levemente a respiração (elemento ar). 
-                Após esse leve aquecimento, sentimos uma leve sensação de relaxamento que quase é imperceptível (elemento fogo).
-                Após esse relaxamento, sentimos uma estabilidade, calma (elemento terra).
-                Com a ativação desses 5 lungs (elementos), em curto prazo sentimos alegria e felicidade por instantes.
-            </p>
-            <p>
-                Só que essa sensação não dura, e queremos sentir isso sempre, então buscamos outros objetos de desejos, relacionamentos, status, etc.
-                Essa é a verdadeira liberdade, sair da escravidão de necessitar que tudo esteja lá fora favorável.
-            </p>
-            <p>
-                Para que ela descondicione e possamos começar a viver de uma maneira autônoma, há um método, um caminho, passo a passo.
-                Esse método inclui práticas de meditação, compaixão, bondade e atitudes diárias e levará os alunos ao caminho da liberação.
-            </p>
-        </div>
-
-        <section class="form-section">
-            <h2>Principios da Renkai</h2>
-
-            <h3>Reino dos Deuses (Devas)</h3>
-            <div>
-                <p><strong>Emoção perturbadora:</strong> Orgulho </p>
-                <p><strong>Descrição interna:</strong> Representa a busca pela perfeição, prazer e conforto excessivos, levando à ignorância do sofrimento dos outros. Quem vive neste estado tende a evitar confrontar a dor ou mudanças, vivendo em uma bolha de bem-estar ilusório.</p>
-                <p><strong>Visão psicológica:</strong> Pessoas nesse estado podem se sentir superiores ou invulneráveis, mas enfrentam dificuldades ao lidar com perdas ou impermanência.</p>
+    <body id="root">
+        <header>
+            <div class="logo">
+                <img src="./public/logo.png" alt="Renkai Internacional">
+                <span>Renkai Internacional</span>
             </div>
-
-            <h3>Reino dos Semideuses (Asuras)</h3>
-        </section>
-
-        <section class="form-section">
-            <h2>Visão Geral e Reflexão Psicológica</h2>
-            <h2>Os Seis Reinos</h2>
-            
-            <div class="content">
-                <h1>Visão Geral e Reflexão Psicológica</h1>
-                <h2>Os Seis Reinos</h2>
-                <p>
-                    Os seis reinos são, em última análise, projeções da mente condicionada. Eles revelam como emoções perturbadoras moldam a experiência da realidade e como padrões mentais específicos podem criar ciclos de sofrimento. 
-                    Psicologicamente, esses reinos nos convidam a refletir sobre nossos estados internos e a reconhecer que, ao transformar nossas emoções e percepções, podemos transcender os ciclos do samsara e alcançar maior liberdade e equanimidade.
-                </p>
-                <h2>5 Lungs (Elementos)</h2>
-                <p>
-                    Os cinco lungs tibetanos estão diretamente ligados aos cinco elementos e às emoções negativas que perpetuam os estados samsáricos dos seis reinos. 
-                    Eles refletem como as energias sutis se manifestam na mente e no corpo, influenciando padrões de comportamento e experiências de sofrimento.
-                </p>
+            <nav>
                 <ul>
-                    <li>
-                        <h3>Prana do Coração (Elemento Espaço)</h3>
-                        <p class="elemento">Emoção Negativa: Orgulho (Reino dos Deuses)</p>
-                        <p class="descricao">O desequilíbrio do espaço resulta em dispersão mental e desconexão com a realidade, nutrindo a ignorância sobre o sofrimento dos outros e uma sensação de superioridade.</p>
-                    </li>
-                    <li>
-                        <h3>Prana Ascendente (Elemento Ar)</h3>
-                        <p class="elemento">Emoção Negativa: Ciúme e inveja (Reino dos Semideuses)</p>
-                        <p class="descricao">O ar desequilibrado alimenta inquietação, competição e comparação constante, criando tensão e desejo de superar os outros.</p>
-                    </li>
-                    <li>
-                        <h3>Prana do Calor Metabólico (Elemento Fogo)</h3>
-                        <p class="elemento">Emoção Negativa: Raiva e ódio (Reino dos Seres Infernais)</p>
-                        <p class="descricao">O desequilíbrio no fogo intensifica impulsos destrutivos, emoções negativas e conflitos internos que consomem a clareza da mente.</p>
-                    </li>
-                    <li>
-                        <h3>Prana Onipresente (Elemento Água)</h3>
-                        <p class="elemento">Emoção Negativa: Ganância e insatisfação (Reino dos Espíritos Famintos)</p>
-                        <p class="descricao">A água desequilibrada gera um fluxo desordenado de emoções, perpetuando a carência emocional, a insaciabilidade e a incapacidade de encontrar satisfação.</p>
-                    </li>
-                    <li>
-                        <h3>Prana Descendente (Elemento Terra)</h3>
-                        <p class="elemento">Emoção Negativa: Ignorância e apatia (Reino dos Animais)</p>
-                        <p class="descricao">A terra em desequilíbrio resulta em inércia, preguiça mental e falta de percepção espiritual, mantendo a mente presa a padrões instintivos e repetitivos.</p>
-                    </li>
+                    <li><a href="#about">Sobre nós</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                    <li><a href="#faq">Ajuda</a></li>
+                    <li><a href="#testimonial">Depoimentos</a></li>
+                    <li><a href="#philosofy">Nossa filosofia</a></li>
                 </ul>
-            </div>
-        </section>
+            </nav>
+        </header>
+        <main>
+            <section id="testimonial" class="form-section testimonial-section">
+                <h2>Depoimentos</h2>
+                <div class="testimonial-slider">
+                    <div class="testimonial active">
+                        <p>"Achei genial a metodologia das acumulações, dá
+                            realmente para ver nossa evolução praticando,
+                            isso me mantém motivado ao mesmo tempo que percebo
+                            os efeitos na minha mente a cada ciclo e
+                            troca de Manto."</p>
+                        <div class="author">Maria Clara Fonseca, 27 anos, Belo
+                            Horizonte - MG</div>
+                    </div>
+                    <div class="testimonial">
+                        <p>"Sou jovem, mas sempre me senti perdida. Na Renkai,
+                            encontrei uma filosofia que me dá direção. As
+                            práticas de shamatha e do mantra de Chenrezig me
+                            ajudaram a controlar minhas emoções e
+                            finalmente encontrei respostas para perguntas que
+                            sempre permaneciam vazias."</p>
+                        <div class="author">Juliana Reis Barbosa, 19 anos, São
+                            Paulo - SP</div>
+                    </div>
+                    <div class="testimonial">
+                        <p>"Minha vida estava desmoronando emocionalmente quando
+                            encontrei a Renkai. Hoje, depois de fazer
+                            parte desse movimento tão lindo, consigo lidar com
+                            meus próprios desafios e ajudar os outros.
+                            Até minha vida financeira mudou, com maior clareza
+                            para tomar decisões."</p>
+                        <div class="author">Cláudia Lima Torres, 48 anos, Manaus
+                            - AM</div>
+                    </div>
 
-            
-        <section class="form-section">
-            <div>
-                <h2>Bodichita</h2>
-            </div>
-        
-            <section class="content">
-                <article class="introduction">
-                    <h2>O Que É Bodichita?</h2>
-                    <p>
-                        Dentro da <strong>Renkai</strong>, baseada nos ensinamentos do Budismo Mahayana, 
-                        <strong>bodichita</strong> é o coração compassivo que aspira à iluminação, não como um objetivo pessoal, 
-                        mas para beneficiar todos os seres. É a verdadeira razão de ser, o propósito último da existência, que vai além 
-                        das buscas individuais e se conecta profundamente ao bem-estar coletivo.
-                    </p>
-                </article>
-        
-                <article class="dimensions">
-                    <h2>Duas Dimensões de Bodichita:</h2>
-                    <div class="dimension">
-                        <h3>Bodichita Relativa:</h3>
-                        <p>
-                            É o desejo profundo de aliviar o sofrimento e trazer felicidade a todos os seres, cultivando amor e compaixão 
-                            por meio de nossas ações e intenções.
-                        </p>
+                    <div class="testimonial">
+                        <p> "Participar da Renkai foi a melhor decisão que
+                            tomei. As práticas me ensinaram a ter compaixão e
+                            paciência, o que transformou meu casamento. Nunca
+                            imaginei que a espiritualidade pudesse ser tão
+                            prática."</p>
+                        <div class="author">Rafael Mendes Costa, 32 anos,
+                            Florianópolis - SC</div>
                     </div>
-                    <div class="dimension">
-                        <h3>Bodichita Última:</h3>
-                        <p>
-                            Surge da compreensão da natureza vazia e interdependente de todos os fenômenos, unida à motivação altruísta 
-                            de libertar todos os seres do ciclo de sofrimento.
-                        </p>
+
+                    <div class="testimonial">
+                        <p> "Na Renkai, encontrei a força para lidar com a perda
+                            de um ente querido. As meditações e as
+                            compreensões que tive com os ensinamentos que eles
+                            transmitem me deram resiliência e me
+                            ensinaram a valorizar a vida de uma forma mais
+                            profunda."</p>
+                        <div class="author">Beatriz Araújo Silva, 45 anos,
+                            Goiânia - GO</div>
                     </div>
-                </article>
-        
-                <article class="conclusion">
-                    <p>
-                        Para aqueles que buscam o verdadeiro propósito da vida, <strong>bodichita</strong> oferece uma resposta clara: o propósito 
-                        não é apenas alcançar a felicidade pessoal, mas expandir esse desejo para o benefício de todos os seres. Na 
-                        <strong>Renkai</strong>, entendemos que o verdadeiro propósito da vida é transcender o egoísmo e alinhar nosso ser com a compaixão 
-                        universal, transformando a busca individual em um caminho de iluminação compartilhada. <strong>Bodichita</strong> é o alicerce 
-                        de todas as nossas práticas espirituais, o motor que nos impulsiona a reconhecer a interconexão de todos os seres e nos 
-                        torna agentes de transformação no mundo.
-                    </p>
-                </article>
+
+                    <div class="testimonial">
+                        <p> "Lutava com depressão há anos e nenhuma abordagem
+                            parecia ajudar. Na Renkai, encontrei um passo
+                            a passo claro e eficaz. A prática Renkai mudou minha
+                            percepção sobre o sofrimento, e o apoio da
+                            irmandade espiritual me trouxe esperança real".</p>
+                        <div class="author">Larissa Andrade Costa, 36 anos,
+                            Fortaleza - CE</div>
+
+                    </div>
+                    <div class="testimonial">
+                        <p> "Eu vivia em constante ansiedade, incapaz de
+                            encontrar paz, todo dia parecia um peso. As
+                            práticas Renkai trouxeram calma e clareza à minha
+                            mente. Hoje, não apenas superei a ansiedade,
+                            mas também descobri uma nova razão para viver." </p>
+                        <div class="author">Ricardo Lopes Ferreira, 40 anos,
+                            Campinas - SP</div>
+                    </div>
+
+                    <div class="testimonial">
+                        <p> "Me sentia perdida em meio a tantas religiões e
+                            filosofias. Quando conheci a Renkai, tudo mudou.
+                            Eles oferecem um caminho estruturado, sem dogmas,
+                            mas com profundo significado. Pela primeira
+                            vez na vida, sinto que pertenço a algo maior." </p>
+                        <div class="author">Ana Soares Lima, 30 anos, Brasília -
+                            DF </div>
+                    </div>
+
+                    <div class="testimonial">
+                        <p> "Passei décadas buscando respostas para o propósito
+                            da vida. A Renkai me mostrou que o caminho
+                            não precisa ser complicado. Com passos claros e
+                            práticas acessíveis, encontrei equilíbrio,
+                            felicidade e uma verdadeira familia espiritual."</p>
+                        <div class="author">Marcos Antônio Silva, 51 anos, Belém
+                            - PA</div>
+                    </div>
+
+                    <div class="testimonial">
+                        <p> "A sobrecarga de informações me deixava confusa e
+                            sem rumo. A Renkai me acolheu e me deu um
+                            sistema claro para evoluir. Hoje, sei onde estou e
+                            para onde quero ir, com serenidade e apoio de
+                            pessoas que compartilham da mesma busca."</p>
+                        <div class="author">Patrícia Almeida Campos, 28 anos,
+                            Vitória - ES</div>
+                    </div>
+
+                    <div class="testimonial">
+                        <p> "Fui atraído pela promessa de um caminho espiritual
+                            estruturado e fiquei impressionado com a
+                            profundidade das práticas. A comunidade da Renkai me
+                            deu forças para superar crises emocionais e
+                            encontrar alegria no cotidiano."</p>
+                        <div class="author">Leonardo Matos Pereira, 47 anos,
+                            Natal - RN</div>
+                    </div>
+                </div>
             </section>
 
-        </section>
-        
-        <section class="form-section blog">
-            <h2>Blog</h2>
+            <section id="about" class="form-section">
+                <h2>Quem somos</h2>
+                <h3>A missão da Renkai</h3>
 
-            <h3>Sabedoria no Dia a Dia</h3>
-
-            <ul>
-                <li>Meditação</li>
-                <li>Práticas Mahayana</li>
-                <li>Reflexões sobre o Samsara</li>
-                <li>Relacoes amorosas</li>
-                <li>Vida financeira</li>
-                <li>Vida emocional</li>
-            </ul>
-        </section>
-
-        <section id="faq" class="form-section">            
-            <div>
-                <h1>Perguntas Frequentes - Renkai</h1>
-            </div>
-            <div class="container">
-                <div class="faq">
-                    <h2>1. O que é a Renkai?</h2>
-                    <p>
-                        A Renkai é um movimento filosófico e espiritual inspirado nos ensinamentos do Budismo Mahayana. 
-                        Por meio da plataforma “O Caminho do Buscador”, a Renkai oferece um sistema estruturado que guia os 
-                        praticantes através de 33 níveis de desenvolvimento filosófico e prático, promovendo sabedoria, 
-                        compaixão e liberdade espiritual.
-                    </p>
-                </div>
-                <div class="faq-divider"></div>
-                <div class="faq">
-                    <h2>2. A Renkai é uma religião?</h2>
-                    <p>
-                        A Renkai não se define como uma religião, mas como um movimento filosófico e espiritual. Apesar disso, 
-                        ela respeita e acolhe pessoas de todas as religiões, acreditando que sua metodologia pode ajudar os 
-                        praticantes a aprofundar a compreensão e conexão com suas próprias crenças.
-                    </p>
-                </div>
-                <div class="faq-divider"></div>
-                <div class="faq">
-                    <h2>3. A Renkai acredita em Deus?</h2>
-                    <p>
-                        Na Renkai, não promovemos a crença em um Deus com forma definida, mas não condenamos essa visão. Nosso 
-                        foco está na experiência direta da Vacuidade Suprema, que transcende os conceitos mentais e os sentidos. 
-                        Para aqueles que acreditam em Deus, a Vacuidade Suprema pode ser vista como uma conexão profunda com o 
-                        divino, baseada em compaixão e sabedoria.
-                    </p>
-                </div>
-                <div class="faq-divider"></div>
-                <div class="faq">
-                    <h2>4. Como a Renkai vê Jesus Cristo?</h2>
-                    <p>
-                        Na Renkai, reconhecemos Jesus Cristo como um ser completamente iluminado que atuou como um Bodisatva na 
-                        Terra. Ele dedicou sua vida a salvar outros seres, agindo com compaixão e sabedoria. Acreditamos que a 
-                        salvação ensinada por Jesus está fundamentada no princípio da graça, uma manifestação da compaixão infinita 
-                        da Vacuidade Suprema. Embora a Renkai foque no caminho do esforço e desenvolvimento gradual, reconhecemos que 
-                        a graça é uma bênção que pode se manifestar a qualquer momento.
-                    </p>
-                    <div class="faq-divider"></div>
-                </div>
-                <div class="faq">
-                    <h2>5. O que é Vacuidade Suprema?</h2>
-                    <p>
-                        A Vacuidade Suprema, no contexto da Renkai, é a essência da realidade. Não é um vazio literal, mas um estado 
-                        de plenitude além dos conceitos mentais e das limitações sensoriais. É a origem da compaixão, sabedoria e alegria 
-                        inatas a todos os seres, acessível por meio da purificação da mente e do desenvolvimento espiritual.
-                    </p>
-                </div>
-                <div class="faq-divider"></div>
-                <div class="faq">
-                    <h2>6. Qual é o objetivo do Caminho do Buscador?</h2>
-                    <p>
-                        O Caminho do Buscador é uma jornada estruturada em 33 níveis que ajuda o praticante a remover os obscurecimentos 
-                        da mente, alcançando estados de compaixão, alegria e sabedoria. Por meio de práticas específicas, o praticante aprende 
-                        a viver em harmonia com a Vacuidade Suprema, conquistando a liberação espiritual e um entendimento mais profundo da 
-                        realidade.
-                    </p>
-                </div>
-                <div class="faq-divider"></div>
-                <div class="faq">
-                    <h2>7. O que é a liberação espiritual na Renkai?</h2>
-                    <p>
-                        A liberação espiritual na Renkai é a conquista de um estado em que o praticante não está mais sujeito às flutuações 
-                        da mente. Nesse estado, compaixão, alegria e sabedoria — qualidades inatas a todos os seres — emergem naturalmente, 
-                        uma vez que os obscurecimentos da mente são removidos por meio das práticas de purificação e desenvolvimento espiritual.
-                    </p>
-                </div>
-                <div class="faq-divider"></div>
-                <div class="faq">
-                    <h2>8. Como a Renkai enxerga as outras religiões?</h2>
-                    <p>
-                        A Renkai não substitui ou conflita com outras religiões. Pelo contrário, ela oferece ferramentas para que os praticantes 
-                        aprofundem sua compreensão e vivência espiritual em suas próprias tradições, ajudando-os a se conectar de forma mais 
-                        clara e compassiva com suas crenças.
-                    </p>
-                </div>
-                <div class="faq-divider"></div>
-                <div class="faq">
-                    <h2>9. A Renkai tem práticas de meditação?</h2>
-                    <p>
-                        Sim, a meditação é uma das práticas centrais da Renkai. Ela é utilizada como uma ferramenta para purificar a mente, 
-                        remover obscurecimentos e permitir que o praticante experimente diretamente estados de compaixão, sabedoria e alegria.
-                    </p>
-                </div>
-                <div class="faq-divider"></div>
-                <div class="faq">
-                    <h2>10. O que são os obscurecimentos da mente?</h2>
-                    <p>
-                        Os obscurecimentos da mente, segundo a filosofia budista seguida pela Renkai, são camadas de confusão, apego e ignorância 
-                        que nos impedem de perceber a realidade como ela é. Esses obscurecimentos nos afastam da Vacuidade Suprema, e o caminho 
-                        proposto pela Renkai tem como objetivo removê-los por meio de práticas de purificação, meditação e desenvolvimento ético.
-                    </p>
-                </div>
-                <div class="faq-divider"></div>
-                <div class="faq">
-                    <h2>11. Como a Renkai vê o conceito de “pecado” em relação aos ensinamentos budistas sobre os obscurecimentos da mente?</h2>
-                    <p>
-                        O conceito de “pecado” no cristianismo está relacionado à desobediência às leis divinas, sendo visto como algo que afasta 
-                        o ser humano do Criador. No entanto, na Renkai, adotamos uma perspectiva baseada nos ensinamentos filosóficos budistas, 
-                        que falam sobre os “obscurecimentos da mente”. Esses obscurecimentos não são julgamentos morais, mas distorções de percepção 
-                        que nos afastam da verdadeira natureza da realidade, que é a Vacuidade Suprema — um estado de compaixão, sabedoria e interconexão. 
-                        No caminho da Renkai, buscamos remover esses obscurecimentos através das práticas de purificação, como a meditação, a reflexão 
-                        ética e o cultivo da compaixão, permitindo-nos nos aproximar de nossa natureza inata e de uma vida plena e harmoniosa com a realidade.
-                    </p>
-                </div>
-                <div class="faq-divider"></div>
-                <div class="faq">
-                    <h2>12. É possível seguir o Caminho do Buscador e continuar em outra religião?</h2>
-                    <p>
-                        Sim, é perfeitamente possível. A Renkai não exige exclusividade e respeita as crenças de cada indivíduo. O Caminho do Buscador 
-                        é uma metodologia prática que complementa a vivência espiritual de qualquer tradição, ajudando os praticantes a compreenderem 
-                        melhor suas próprias religiões.
-                    </p>
-                </div>
-                <div class="faq-divider"></div>
-                <div class="faq">
-                    <h2>13. O que significa “caminho do esforço” na Renkai?</h2>
-                    <p>
-                        Na Renkai, o “caminho do esforço” refere-se ao compromisso consciente do praticante em renovar constantemente sua motivação 
-                        por meio de práticas estruturadas, como meditação, reflexão ética e desenvolvimento da compaixão e sabedoria. Esse esforço 
-                        contínuo permite ao praticante trilhar um caminho claro em direção à liberação espiritual, independentemente de receber ou 
-                        não a graça divina.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="form-section contact">
-            <h2>Contato</h2>
-
-            <h3>Conecte-se com a Renkai</h3>
-            <p>Para dúvidas, sugestões e suporte</p>
-
-            <a href="#" class="contact-button">Entrar em contato</a>
-        </section>
-    </main>
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-logo">
-        
-                <h3>
-                    Renkai Internacional
-                </h3>
                 <p>
-                    Torne-se um bodhisattva autorrealizado despertando a felicidade e paz interna sem depender de nenhum fator externo através do desenvolvimento da bodichita.
- 
+                    A Renkai internacional é um movimento Filosófico e
+                    Espiritual baseado nos ensinamentos de Buda
+                    Shakyamuni e no Karandavyuha Sutra. <br />
+                    Acreditamos que a união da filosofia com a prática constitui
+                    o caminho para a libertação do sofrimento,
+                    uma vez que somente o conhecimento intelectual <br />
+                    se torna limitado pois a verdade está alem das palavras é
+                    necessário unir filosofia e prática. <br />
+                    Nosso objetivo é guiar praticantes no caminho da libertação
+                    do samsara atraves de uma metodologia de 33
+                    niveis representada por mantos, <br />
+                    passo a passo onde voce podera medir seu desenvolvimento e
+                    progresso filosófico espiritual.
+
+                </p>
+            </section>
+
+            <section class="form-section">
+                <div id="philosofy" style="text-align: center; margin: 50px;">
+                    <h2 style="color: #006400;">Nossa Filosofia (a jornada do
+                        bodhisattva e liberação do sofrimento)</h2>
+                </div>
+
+                <div>
+                    <p>
+                        Um término de relacionamento, uma quebra de alianças,
+                        desemprego, falta de dinheiro ou simplesmente
+                        dores emocionais profundas que nem você sabe explicar.
+                        Tudo que buscamos é reverter essas situações porque no
+                        fundo buscamos a felicidade. Então achamos
+                        que se tudo der certo em nossa vida, se tudo sair como o
+                        esperado, então seremos felizes.
+                    </p>
+                    <p>
+                        Mas na realidade, mesmo que tudo estivesse bem em sua
+                        vida agora, mesmo que realizasse todos os seus
+                        desejos exatamente como acha que quer, depois de um
+                        tempo, a felicidade com essas conquistas iria
+                        sumir, e então você estabeleceria novos planos, novas
+                        metas, tudo para tentar manter migalhas de
+                        alguma felicidade interna através da conquista de coisas
+                        externas.
+                    </p>
+                    <p>
+                        A mídia, a sociedade nos manipula o tempo todo vendendo
+                        sonhos, objetos, conquistas e realizações de
+                        desejos com a falsa promessa de que quando obtivermos
+                        aquilo, aí então seremos felizes.
+                    </p>
+                    <p>
+                        Os ensinamentos da Renkai se baseiam no desenvolvimento
+                        das 5 energias internas nas quais
+                        denominamos 5 lungs ou 5 elementos:
+                        Éter, ar, fogo, água e terra. Tudo que existe no
+                        universo, inclusive o nosso próprio corpo e nossa
+                        mente é constituído desses 5 lungs (elementos).
+                        A sensação de felicidade que sentimos ao obtermos alguma
+                        coisa é um modo de ativar esses 5 elementos
+                        em nossa mente, o que traz temporariamente uma sensação
+                        de felicidade.
+                    </p>
+                    <p>
+                        Um exemplo prático dessa ativação é quando vemos um
+                        objeto ou pessoa na qual desejamos.
+                        Ao olhar o objeto, nosso olhar brilha (ativação do
+                        elemento éter), e expandir levemente a respiração
+                        (elemento ar).
+                        Após esse leve aquecimento, sentimos uma leve sensação
+                        de relaxamento que quase é imperceptível
+                        (elemento fogo).
+                        Após esse relaxamento, sentimos uma estabilidade, calma
+                        (elemento terra).
+                        Com a ativação desses 5 lungs (elementos), em curto
+                        prazo sentimos alegria e felicidade por
+                        instantes.
+                    </p>
+                    <p>
+                        Só que essa sensação não dura, e queremos sentir isso
+                        sempre, então buscamos outros objetos de
+                        desejos, relacionamentos, status, etc.
+                        Essa é a verdadeira liberdade, sair da escravidão de
+                        necessitar que tudo esteja lá fora favorável.
+                    </p>
+                    <p>
+                        Para que ela descondicione e possamos começar a viver de
+                        uma maneira autônoma, há um método, um
+                        caminho, passo a passo.
+                        Esse método inclui práticas de meditação, compaixão,
+                        bondade e atitudes diárias e levará os alunos
+                        ao caminho da liberação.
+                    </p>
+                </div>
+            </section>
+
+            <section class="form-section">
+
+                <h1>Princípios da Renkai</h1>
+
+                <div class="container">
+                    <div class="reino">
+                        <h3>Reino dos Deuses (Devas)</h3>
+                        <p><strong>Emoção perturbadora:</strong> Orgulho</p>
+                        <p><strong>Descrição interna:</strong> Representa a
+                            busca pela perfeição, prazer e conforto
+                            excessivos, levando à ignorância do sofrimento dos
+                            outros. Quem vive neste estado tende a evitar
+                            confrontar a dor ou mudanças, vivendo em uma bolha
+                            de bem-estar ilusório.</p>
+                        <p><strong>Visão psicológica:</strong> Pessoas nesse
+                            estado podem se sentir superiores ou
+                            invulneráveis, mas enfrentam dificuldades ao lidar
+                            com perdas ou impermanência.</p>
+                    </div>
+
+                    <div class="reino">
+                        <h3>Reino dos Semideuses (Asuras)</h3>
+                        <p><strong>Emoção perturbadora:</strong> Ciúme e
+                            inveja</p>
+                        <p><strong>Descrição interna:</strong> Corresponde ao
+                            desejo de competir e superar os outros,
+                            motivado pela insegurança. A obsessão por
+                            comparar-se aos outros e buscar vantagens perpetua o
+                            conflito interno e externo.</p>
+                        <p><strong>Visão psicológica:</strong> Pessoas nesse
+                            estado têm dificuldade em apreciar suas
+                            conquistas ou a felicidade alheia, vivendo em
+                            constante tensão por sentir que algo está sendo
+                            tirado delas.</p>
+                    </div>
+
+                    <div class="reino">
+                        <h3>Reino Humano</h3>
+                        <p><strong>Emoção perturbadora:</strong> Desejo e
+                            apego</p>
+                        <p><strong>Descrição interna:</strong> Marca um
+                            equilíbrio entre sofrimento e prazer, tornando-se o
+                            único reino onde a libertação é mais acessível.
+                            Contudo, o apego aos prazeres sensoriais e à
+                            busca de validação pode aprisionar a mente.</p>
+                        <p><strong>Visão psicológica:</strong> Reflete o dilema
+                            humano de buscar satisfação em objetos
+                            externos, sem perceber que a verdadeira paz vem de
+                            dentro.</p>
+                    </div>
+
+                    <div class="reino">
+                        <h3>Reino dos Animais</h3>
+                        <p><strong>Emoção perturbadora:</strong> Ignorância e
+                            apatia</p>
+                        <p><strong>Descrição interna:</strong> Este reino
+                            simboliza uma existência dominada pela
+                            sobrevivência instintiva, sem reflexão ou busca por
+                            sentido mais profundo. É caracterizado por
+                            medo, submissão e resistência à mudança.</p>
+                        <p><strong>Visão psicológica:</strong> Pessoas nesse
+                            estado tendem a repetir padrões inconscientes,
+                            evitando desafios intelectuais ou emocionais,
+                            vivendo em conformidade e ignorância.</p>
+                    </div>
+
+                    <div class="reino">
+                        <h3>Reino dos Espíritos Famintos (Pretas)</h3>
+                        <p><strong>Emoção perturbadora:</strong> Ganância e
+                            insatisfação</p>
+                        <p><strong>Descrição interna:</strong> Representa o
+                            desejo insaciável que nunca encontra satisfação.
+                            A fome e sede simbólicas refletem uma carência
+                            emocional ou espiritual que não pode ser
+                            preenchida externamente.</p>
+                        <p><strong>Visão psicológica:</strong> Manifesta-se como
+                            vícios, consumismo ou compulsões, onde a
+                            pessoa sente um vazio constante, mesmo após obter o
+                            que deseja.</p>
+                    </div>
+
+                    <div class="reino">
+                        <h3>Reino dos Seres Infernais (Narakas)</h3>
+                        <p><strong>Emoção perturbadora:</strong> Ódio e
+                            raiva</p>
+                        <p><strong>Descrição interna:</strong> É o estado mais
+                            extremo de sofrimento, onde a mente está
+                            consumida por dor, culpa e autopunição. Pode ser
+                            associado a conflitos internos intensos ou
+                            estados depressivos profundos.</p>
+                        <p><strong>Visão psicológica:</strong> Quem está nesse
+                            estado experimenta uma percepção distorcida
+                            da realidade, projetando sofrimento e negatividade
+                            sobre tudo e todos.</p>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="form-section">
+                <h2>Visão Geral e Reflexão Psicológica</h2>
+                <h2>Os Seis Reinos</h2>
+
+                <div class="content">
+                    <h1>Visão Geral e Reflexão Psicológica</h1>
+                    <h2>Os Seis Reinos</h2>
+                    <p>
+                        Os seis reinos são, em última análise, projeções da
+                        mente condicionada. Eles revelam como emoções
+                        perturbadoras moldam a experiência da realidade e como
+                        padrões mentais específicos podem criar
+                        ciclos de sofrimento.
+                        Psicologicamente, esses reinos nos convidam a refletir
+                        sobre nossos estados internos e a reconhecer
+                        que, ao transformar nossas emoções e percepções, podemos
+                        transcender os ciclos do samsara e alcançar
+                        maior liberdade e equanimidade.
+                    </p>
+                    <h2>5 Lungs (Elementos)</h2>
+                    <p>
+                        Os cinco lungs tibetanos estão diretamente ligados aos
+                        cinco elementos e às emoções negativas que
+                        perpetuam os estados samsáricos dos seis reinos.
+                        Eles refletem como as energias sutis se manifestam na
+                        mente e no corpo, influenciando padrões de
+                        comportamento e experiências de sofrimento.
+                    </p>
+                    <ul>
+                        <li>
+                            <h3>Prana do Coração (Elemento Espaço)</h3>
+                            <p class="elemento">Emoção Negativa: Orgulho (Reino
+                                dos Deuses)</p>
+                            <p class="descricao">O desequilíbrio do espaço
+                                resulta em dispersão mental e desconexão com a
+                                realidade, nutrindo a ignorância sobre o
+                                sofrimento dos outros e uma sensação de
+                                superioridade.</p>
+                        </li>
+                        <li>
+                            <h3>Prana Ascendente (Elemento Ar)</h3>
+                            <p class="elemento">Emoção Negativa: Ciúme e inveja
+                                (Reino dos Semideuses)</p>
+                            <p class="descricao">O ar desequilibrado alimenta
+                                inquietação, competição e comparação
+                                constante, criando tensão e desejo de superar os
+                                outros.</p>
+                        </li>
+                        <li>
+                            <h3>Prana do Calor Metabólico (Elemento Fogo)</h3>
+                            <p class="elemento">Emoção Negativa: Raiva e ódio
+                                (Reino dos Seres Infernais)</p>
+                            <p class="descricao">O desequilíbrio no fogo
+                                intensifica impulsos destrutivos, emoções
+                                negativas
+                                e conflitos internos que consomem a clareza da
+                                mente.</p>
+                        </li>
+                        <li>
+                            <h3>Prana Onipresente (Elemento Água)</h3>
+                            <p class="elemento">Emoção Negativa: Ganância e
+                                insatisfação (Reino dos Espíritos Famintos)</p>
+                            <p class="descricao">A água desequilibrada gera um
+                                fluxo desordenado de emoções, perpetuando a
+                                carência emocional, a insaciabilidade e a
+                                incapacidade de encontrar satisfação.</p>
+                        </li>
+                        <li>
+                            <h3>Prana Descendente (Elemento Terra)</h3>
+                            <p class="elemento">Emoção Negativa: Ignorância e
+                                apatia (Reino dos Animais)</p>
+                            <p class="descricao">A terra em desequilíbrio
+                                resulta em inércia, preguiça mental e falta de
+                                percepção espiritual, mantendo a mente presa a
+                                padrões instintivos e repetitivos.</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="form-section">
+                <div>
+                    <h2>Bodichita</h2>
+                </div>
+
+                <section class="content">
+                    <article class="introduction">
+                        <h2>O Que É Bodichita?</h2>
+                        <p>
+                            Dentro da <strong>Renkai</strong>, baseada nos
+                            ensinamentos do Budismo Mahayana,
+                            <strong>bodichita</strong> é o coração compassivo
+                            que aspira à iluminação, não como um objetivo
+                            pessoal,
+                            mas para beneficiar todos os seres. É a verdadeira
+                            razão de ser, o propósito último da
+                            existência, que vai além
+                            das buscas individuais e se conecta profundamente ao
+                            bem-estar coletivo.
+                        </p>
+                    </article>
+
+                    <article class="dimensions">
+                        <h2>Duas Dimensões de Bodichita:</h2>
+                        <div class="dimension">
+                            <h3>Bodichita Relativa:</h3>
+                            <p>
+                                É o desejo profundo de aliviar o sofrimento e
+                                trazer felicidade a todos os seres, cultivando
+                                amor e compaixão
+                                por meio de nossas ações e intenções.
+                            </p>
+                        </div>
+                        <div class="dimension">
+                            <h3>Bodichita Última:</h3>
+                            <p>
+                                Surge da compreensão da natureza vazia e
+                                interdependente de todos os fenômenos, unida à
+                                motivação altruísta
+                                de libertar todos os seres do ciclo de
+                                sofrimento.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="conclusion">
+                        <p>
+                            Para aqueles que buscam o verdadeiro propósito da
+                            vida, <strong>bodichita</strong> oferece uma
+                            resposta clara: o propósito
+                            não é apenas alcançar a felicidade pessoal, mas
+                            expandir esse desejo para o benefício de todos
+                            os seres. Na
+                            <strong>Renkai</strong>, entendemos que o verdadeiro
+                            propósito da vida é transcender o egoísmo e
+                            alinhar nosso ser com a compaixão
+                            universal, transformando a busca individual em um
+                            caminho de iluminação compartilhada.
+                            <strong>Bodichita</strong> é o alicerce
+                            de todas as nossas práticas espirituais, o motor que
+                            nos impulsiona a reconhecer a interconexão
+                            de todos os seres e nos
+                            torna agentes de transformação no mundo.
+                        </p>
+                    </article>
+                </section>
+
+            </section>
+
+            <section class="form-section">
+                <div class="container">
+                    <h2>Liberação Espiritual</h2>
+
+                    <h3>O Que É Liberação Espiritual?</h3>
+                    <p>Dentro da Renkai, o objetivo principal é a liberação
+                        espiritual, que representa a saída completa do samsara,
+                        o ciclo interminável de nascimento, morte e
+                        renascimento. Esse é o primeiro passo para alcançar a
+                        iluminação completa. A liberação espiritual ocorre
+                        quando o praticante se liberta das aflições mentais e
+                        emocionais que mantêm a mente aprisionada aos seis
+                        reinos samsáricos – os reinos de deuses, semideuses,
+                        seres humanos, animais, espíritos famintos e
+                        infernais.</p>
+                    <p>Ao atingir a liberação espiritual, a mente é libertada
+                        dos lung desequilibrados, ou dos ventos sutis que,
+                        quando desequilibrados, reforçam as emoções negativas
+                        ligadas aos seis reinos. Por exemplo, o prana do coração
+                        (espaço) pode nos manter presos ao orgulho e ao apego ao
+                        status do reino dos deuses; o prana ascendente (ar) pode
+                        gerar ciúmes no reino dos semideuses, enquanto o prana
+                        do calor metabólico (fogo) alimenta a raiva do reino dos
+                        seres infernais. O desequilíbrio da água e da terra, por
+                        sua vez, perpetuam o sofrimento do reino dos espíritos
+                        famintos e animais, respectivamente, por meio da
+                        insatisfação e ignorância.</p>
+
+                    <h3>Diferença entre Liberação Espiritual e Iluminação
+                        Completa</h3>
+                    <p>A liberação espiritual se refere à liberação do samsara,
+                        um estado de libertação do ciclo de renascimento e
+                        sofrimento, alcançado através da purificação das
+                        aflições mentais e emocionais. Ao atingir a liberação, o
+                        praticante não mais se vê preso às manifestações de
+                        desejo, raiva, ignorância e apego que os seis reinos
+                        representam. A liberação espiritual é uma paz profunda e
+                        uma liberdade das emoções perturbadoras, mas não é o fim
+                        da jornada. Ela é, na verdade, o primeiro passo na
+                        jornada para a iluminação completa.</p>
+                    <p>A iluminação completa, por outro lado, é a realização
+                        final de bodichita, quando o praticante não só se
+                        liberta do samsara, mas alcança a sabedoria total e a
+                        compaixão ilimitada. A iluminação completa é o estado de
+                        um buda, onde há total transcendência do sofrimento,
+                        compreensão perfeita da natureza vazia dos fenômenos, e
+                        uma atuação plena e compassiva para beneficiar todos os
+                        seres.</p>
+
+                    <h3>Conclusão</h3>
+                    <p>Na Renkai, o objetivo principal é alcançar a liberação
+                        espiritual, que é a primeira etapa para a iluminação
+                        completa. A liberação espiritual envolve a superação das
+                        emoções negativas ligadas aos seis reinos samsáricos e o
+                        equilíbrio dos lung, permitindo a transcendência do
+                        sofrimento e o início de um caminho de transformação
+                        espiritual. A iluminação completa é o estágio final
+                        desse caminho, onde se atinge a sabedoria, compaixão e
+                        liberdade total. A liberação espiritual é, portanto, o
+                        primeiro passo fundamental em direção a um estado de paz
+                        plena e o verdadeiro propósito de nossa prática na
+                        Renkai.</p>
+                </div>
+            </section>
+
+            <section class="form-section">
+                <div class="container">
+                    <h2>Um Caminho Estruturado para a Libertação</h2>
+
+                    <h1>Os 33 Níveis de Avanço</h1>
+                    <p>Dentro da metodologia da Renkai, os 33 níveis de avanço
+                        representam uma jornada estruturada de prática
+                        espiritual. Cada nível simboliza uma etapa de
+                        amadurecimento e aprofundamento no caminho da liberação
+                        espiritual. Uma tradição marcante na Renkai é a troca
+                        simbólica do manto, que ocorre conforme o praticante
+                        avança por esses níveis, marcando a progressão e o
+                        compromisso contínuo com o desenvolvimento
+                        espiritual.</p>
+                    <p>Os ensinamentos são entregues de forma progressiva, passo
+                        a passo, permitindo que os praticantes assimilem e
+                        integrem cada lição antes de passar para a próxima. Essa
+                        abordagem garante que a fundação espiritual seja sólida
+                        e que cada nível de prática contribua para o crescimento
+                        holístico do buscador.</p>
+
+                    <h2>Práticas Fundamentais</h2>
+
+                    <h3>Shamata</h3>
+                    <p>A prática de shamatha, dentro da Renkai, é uma técnica de
+                        meditação focada na estabilização e pacificação da
+                        mente. Ela está diretamente relacionada ao equilíbrio
+                        dos 5 lungs (ou ventos), que são as energias sutis que
+                        governam nossas emoções e estados mentais. Ao
+                        estabilizar esses ventos, a prática de shamatha promove
+                        uma mente serena e equilibrada, reduzindo as flutuações
+                        emocionais que nos mantêm presos ao samsara – o ciclo de
+                        sofrimento e renascimento.</p>
+                    <p>Cada um dos 5 lungs está associado a uma emoção negativa
+                        que surge nos seis reinos samsáricos, e a estabilização
+                        desses ventos permite a superação dessas emoções,
+                        criando um espaço interno para a libertação
+                        espiritual.</p>
+
+                    <h3>Dhyan</h3>
+                    <p>A prática de dhyana, dentro da Renkai, é uma meditação
+                        profunda que visa desenvolver uma percepção direta da
+                        realidade, além das palavras, conceitos e dos sentidos.
+                        Ela permite que o praticante experimente a natureza
+                        fundamental da mente e do mundo, cultivando uma
+                        compreensão mais profunda da impermanência e da
+                        vacuidade.</p>
+                    <p>Através dessa prática, a mente é purificada das
+                        distrações e perturbadores mentais, abrindo o caminho
+                        para a sabedoria e a realização espiritual. Grandes
+                        mestres de várias tradições alcançaram a realização
+                        completa através dessa prática, incluindo o Buda
+                        Shakyamuni, Padmasambhava (Guru Rinpoche), Milarepa e,
+                        na tradição zen, mestres como Dogen e Hakuin. Esses
+                        mestres exemplificam como a prática de dhyana pode levar
+                        à transformação radical da mente, resultando em
+                        iluminação e liberdade do samsara.</p>
+                </div>
+            </section>
+
+            <section class="form-section">
+                <div class="container">
+                    <h2>Acumulação Mantrica</h2>
+
+                    <h1>O Verdadeiro Caminho da Transformação</h1>
+                    <p>Nos dias de hoje, é comum observar a popularidade dos
+                        mantras sendo reduzida a uma "modinha". Muitas pessoas
+                        experimentam diversos mantras, recitando-os de maneira
+                        superficial, acreditando que, por si só, isso resolverá
+                        seus problemas ou trará resultados imediatos. No
+                        entanto, o poder real dos mantras vai muito além de uma
+                        prática casual ou descompromissada.</p>
+                    <p>A essência da prática mantrica está na acumulação.
+                        Recitar um mantra não é apenas um ato mecânico, mas um
+                        caminho gradual e profundo que transforma a mente e
+                        desperta o siddhi do mantra — o poder espiritual que
+                        surge quando nos tornamos um com ele. O siddhi não é
+                        algo externo ou mágico; é a experiência direta de
+                        unidade com a energia do mantra, um estado em que ele
+                        deixa de ser apenas som e passa a ser parte de quem
+                        somos.</p>
+
+                    <h2>O Caminho da Acumulação</h2>
+
+                    <h3>100 Mil Recitações</h3>
+                    <p>Este é o primeiro estágio, onde começamos a familiarizar
+                        a mente com o mantra e seus efeitos. A repetição
+                        contínua purifica pensamentos e emoções mais densas,
+                        criando um terreno fértil para transformações mais
+                        profundas.</p>
+
+                    <h3>1 Milhão de Recitações</h3>
+                    <p>Aqui, a mente começa a se harmonizar mais profundamente
+                        com o mantra. Neste ponto, o praticante percebe uma
+                        conexão maior com a energia espiritual que o mantra
+                        carrega, e mudanças significativas começam a ocorrer na
+                        vida emocional e mental.</p>
+
+                    <h3>10 Milhões de Recitações</h3>
+                    <p>Este é o estágio onde o siddhi do mantra começa a
+                        despertar. A prática constante dissolve gradualmente as
+                        barreiras entre o praticante e o mantra, e os aspectos
+                        mais sutis da mente são revelados.</p>
+
+                    <h3>100 Milhões de Recitações</h3>
+                    <p>O estágio mais avançado, reservado para os praticantes
+                        dedicados e pacientes, que buscam a integração total com
+                        o mantra. Neste ponto, o mantra se torna parte
+                        intrínseca do praticante, transformando completamente
+                        sua mente e visão de mundo.</p>
+                </div>
+            </section>
+            <section class="form-section">
+                <div class="container">
+                    <h2>Uma Jornada Gradual e Transformadora</h2>
+                    <p>A prática da acumulação mantrica não é um caminho rápido
+                        ou fácil. É um processo disciplinado e gradual que
+                        requer paciência, devoção e uma compreensão profunda do
+                        propósito espiritual. Cada etapa nos aproxima da
+                        realização do siddhi, e cada repetição nos convida a um
+                        encontro mais íntimo com a verdadeira natureza da
+                        mente.</p>
+                    <p>Portanto, recitar diversos mantras de maneira superficial
+                        pode até trazer um conforto momentâneo, mas não resolve
+                        questões profundas da mente e do espírito. O verdadeiro
+                        poder está em persistir em um único mantra, acumulando-o
+                        com dedicação e permitindo que ele transforme sua vida
+                        de dentro para fora.</p>
+                    <p>Na Renkai, oferecemos orientação e apoio para aqueles que
+                        desejam trilhar esse caminho, mostrando como cada etapa
+                        pode revelar um novo nível de profundidade e significado
+                        em sua jornada espiritual.</p>
+
+                    <h2>Tonglen</h2>
+                    <p><strong>Prática de compaixão que beneficia os
+                            outros:</strong></p>
+                    <p>A prática de tonglen, dentro da Renkai, é uma poderosa
+                        ferramenta para o desenvolvimento de compaixão e
+                        bodichita. Ao focar na troca de energia com os outros,
+                        ela nos permite transcender o ego e cultivar um profundo
+                        senso de solidariedade e altruísmo, fundamentais para a
+                        liberação espiritual. Através dessa prática, o
+                        praticante aprende a transformar o sofrimento e as
+                        dificuldades dos outros, desenvolvendo uma conexão
+                        genuína com todos os seres, o que é essencial para o
+                        desenvolvimento da verdadeira compaixão.</p>
+                    <p>Além do impacto interno, a prática de tonglen também tem
+                        benefícios práticos no mundo. Ao cultivar a compaixão
+                        genuína, o praticante se torna mais capaz de promover a
+                        cura física e mental em seu entorno, seja por meio de
+                        ações diretas ou ao oferecer apoio emocional e
+                        energético. Essa prática ativa de ajuda aos outros, com
+                        o coração voltado para o bem-estar coletivo, tem um
+                        efeito transformador tanto para quem recebe quanto para
+                        quem oferece. A eficácia dessa ação depende do nível de
+                        avanço no caminho espiritual do praticante e do
+                        desenvolvimento de sua compaixão e bodichita, sendo mais
+                        poderosa à medida que o praticante se aproxima de uma
+                        realização mais profunda e ampla da natureza da mente e
+                        da realidade.</p>
+
+                    <h2>A Idealizadora</h2>
+                    <p><strong>Milena Martins:</strong> fundadora da Renkai
+                        Internacional, é uma figura inspiradora cuja trajetória
+                        e motivação deram origem a esse caminho espiritual. Com
+                        uma história marcada por dedicação, estudos profundos e
+                        prática intensa, Milena Martins construiu a Renkai como
+                        um espaço para aqueles que buscam uma transformação
+                        genuína. Sua visão e liderança têm guiado inúmeras
+                        pessoas em sua jornada para a liberação espiritual e
+                        iluminação, mostrando que a compaixão, o conhecimento e
+                        a prática comprometida podem transformar vidas.</p>
+                </div>
+            </section>
+
+            <section class="form-section">
+                <div class="container">
+                   
+                    <h3>Milena Martins, Fundadora da Renkai Internacional</h3>
+                    <p>Desde a mais tenra idade, Milena foi uma questionadora de
+                        todas as Verdades e crenças que foram colocadas em sua
+                        mente. Aquilo nunca a satisfez espiritualmente; nenhuma
+                        palavra de livro, nenhuma tese filosófica poderia saciar
+                        a sede espiritual daquilo que transcende o intelecto: a
+                        experiência viva, dia após dia, dos ensinamentos.</p>
+                    <p>Apesar de, externamente, tudo parecer bem em sua vida,
+                        Milena atravessou uma fase de profunda angústia e vazio
+                        existencial, uma crise que a levou a buscar respostas
+                        sobre a existência. Em sua busca, deparou-se, de um
+                        lado, com religiosos que nunca se perguntaram por que
+                        seguiam o que seguiam, mais interessados em bens
+                        materiais do que na espiritualidade profunda. Do outro,
+                        encontrou pessoas que deturpavam os ensinamentos
+                        espirituais, reduzindo-os a técnicas de lei da atração e
+                        cocriação, transformando tudo em ferramentas para
+                        reforçar suas identidades e relativizar a Verdade. Esses
+                        extremos, embora aparentemente opostos, compartilhavam a
+                        superficialidade e a incapacidade de resolver o problema
+                        central: encontrar o propósito profundo da existência e
+                        a fonte de felicidade duradoura.</p>
+                    <p>O marco transformador ocorreu quando Milena encontrou seu
+                        primeiro mestre, um verdadeiro divisor de águas em sua
+                        vida. Esse mestre possuía a rara habilidade de
+                        sistematizar os ensinamentos espirituais, organizando-os
+                        em metodologias práticas e profundas. Apesar de sua
+                        vasta experiência e conhecimento, ele preferia manter-se
+                        distante dos holofotes. Foi a partir desse encontro, e
+                        das metodologias que a tiraram de um estado de confusão
+                        e vazio para alguém com um caminho espiritual profundo e
+                        efetivo a seguir, que surgiu pela primeira vez em sua
+                        mente e coração a aspiração de compartilhar aquilo que
+                        havia recebido de tão valioso.</p>
+                    <p>A partir desse ponto, Milena aprofundou-se em estudos com
+                        outros grandes mestres, ampliando seus conhecimentos e
+                        experiências. Compilou, então, na metodologia Renkai,
+                        unindo teoria e prática em uma base sólida, enraizada
+                        nos ensinamentos do Buda Shakyamuni, com mais de 2600
+                        anos de história.</p>
+                    <p>Ao aplicar o método em sua vida, Milena experimentou os
+                        frutos desse caminho: encontrou a cada dia a fonte de
+                        felicidade que tanto buscava e as respostas para
+                        questões existenciais que nenhuma filosofia ou
+                        explicação superficial havia conseguido sanar.</p>
+                    <p>Formada em Filosofia, Milena combina seu profundo
+                        conhecimento acadêmico com suas vivências espirituais
+                        para criar uma abordagem acessível e transformadora. Uma
+                        de suas aspirações é formar não apenas alunos no Brasil
+                        e no mundo, mas também professores do caminho
+                        espiritual, capacitando-os a disseminar os ensinamentos
+                        e expandir essa rede de transformação.</p>
+                    <p>Hoje, como fundadora da Renkai Internacional, Milena se
+                        dedica a tornar esses ensinamentos acessíveis ao maior
+                        número possível de buscadores profundos. Seu compromisso
+                        é incentivar que todos pratiquem os métodos antes de
+                        acreditar cegamente, permitindo que os resultados se
+                        manifestem em suas vidas, relacionamentos e em seus
+                        próprios corações.</p>
+                </div>
+
+            </section>
+
+            <section class="form-section">
+            <div class="container">
+                <h1>O Caminho do Buscador</h1>
+                <h2>Sua Jornada de Transformação e Propósito</h2>
+                <p>
+                    Você está diante de algo que não é apenas mais um curso — é uma plataforma de evolução espiritual e filosófica 
+                    que guiará você em uma jornada profunda de 33 níveis de transformação. Este é o <strong>Caminho do Buscador</strong>, 
+                    um passo a passo criado para aqueles que buscam um propósito maior, um significado verdadeiro para suas vidas.
+                </p>
+        
+                <h2>O que é O Caminho do Buscador?</h2>
+                <p>
+                    O <strong>Caminho do Buscador</strong> é uma plataforma de aulas online, estruturada para integrar o estudo e a prática 
+                    de forma harmoniosa. Você precisará dedicar pelo menos duas horas por semana para estudo, além de realizar práticas 
+                    diárias específicas a cada nível, alinhando teoria e prática para transformar sua mente e coração.
+                </p>
+        
+                <p>
+                    Mas entenda: isso não é um curso. É uma jornada de evolução intelectual e espiritual, que conduz você por um caminho 
+                    de desenvolvimento gradual. São <span class="highlight">33 níveis</span> representados por mantos de diferentes cores, 
+                    simbolizando o avanço na compreensão e transformação interior.
                 </p>
             </div>
-            <div class="footer-links">
-                <div>
-                    <h4>Institucional</h4>
+            </section>
+            
+            <section class="form-section">
+                <div class="container">
+                    <h1>O Caminho do Buscador</h1>
+                    <h2>Sua Jornada de Transformação e Propósito</h2>
+                    <p>
+                        Você está diante de algo que não é apenas mais um curso — é uma plataforma de evolução espiritual e filosófica 
+                        que guiará você em uma jornada profunda de 33 níveis de transformação. Este é o <strong>Caminho do Buscador</strong>, 
+                        um passo a passo criado para aqueles que buscam um propósito maior, um significado verdadeiro para suas vidas.
+                    </p>
+            
+                    <h2>O que é O Caminho do Buscador?</h2>
+                    <p>
+                        O <strong>Caminho do Buscador</strong> é uma plataforma de aulas online, estruturada para integrar o estudo e a prática 
+                        de forma harmoniosa. Você precisará dedicar pelo menos duas horas por semana para estudo, além de realizar práticas 
+                        diárias específicas a cada nível, alinhando teoria e prática para transformar sua mente e coração.
+                    </p>
+            
+                    <p>
+                        Mas entenda: isso não é um curso. É uma jornada de evolução intelectual e espiritual, que conduz você por um caminho 
+                        de desenvolvimento gradual. São <span class="highlight">33 níveis</span> representados por mantos de diferentes cores, 
+                        simbolizando o avanço na compreensão e transformação interior.
+                    </p>
+            
+                    <h2>A Jornada Começa com Você</h2>
+                    <p>
+                        Antes de ajudar os outros, antes de cumprir sua missão de contribuir para a libertação de todos os seres, é essencial 
+                        começar por você. Essa jornada é um chamado para:
+                    </p>
                     <ul>
-                        <li><a href="#">O que é a Igreja Renkai</a></li>
-                        <li><a href="#">Nosso Fundador</a></li>
-                        <li><a href="#">Nossa Trajetória</a></li>
-                        <li><a href="#">Nossa Crença</a></li>
-                        <li><a href="#">Nossa Visão</a></li>
-                        <li><a href="#">Solos Sagrados</a></li>
-                        <li><a href="#">Escritos Divinos</a></li>
+                        <li><strong>Libertar sua mente:</strong> Romper com os condicionamentos do sofrimento e as distrações do samsara.</li>
+                        <li><strong>Desenvolver qualidades essenciais:</strong> Cultivar compaixão, sabedoria, paciência e equanimidade — as bases de uma mente plena.</li>
+                        <li><strong>Transformar-se em um agente de mudança:</strong> Com o avanço no caminho, ajudar os outros será uma consequência natural de sua própria transformação.</li>
                     </ul>
+            
+                    <h2>Por que O Caminho do Buscador é Diferente?</h2>
+                    <p>
+                        <strong>Metodologia Completa:</strong> Este não é um programa superficial. Cada nível é cuidadosamente projetado para conduzir você a uma transformação real, unindo estudo profundo e práticas transformadoras.
+                    </p>
+                    <p>
+                        <strong>Integração da Filosofia e Prática:</strong> A cada passo, você mergulhará em ensinamentos essenciais e práticas como Shamata, Dhyan, Tonglen, Acumulação de Mantras e Sutras Mahayanas, que não só desenvolvem sua mente, mas a preparam para transformar o mundo.
+                    </p>
+                    <p>
+                        <strong>Preparação para sua Missão:</strong> O objetivo é primeiro fortalecer sua mente e coração. Com esse desenvolvimento, o desejo de ajudar os outros se tornará natural e alinhado com sua realização pessoal e espiritual.
+                    </p>
+                    <a href="https://hotmart.com/pt-br/marketplace/produtos/o-caminho-do-buscador/J95737266S" class="contact-button"> FAÇA PARTE DA NOSSA COMUNIDADE  </a>
                 </div>
-                <div>
-                    <h4>Endereços</h4>
-                    <ul>
-                        <li><a href="#">Unidades no Brasil</a></li>
-                        <li><a href="#">Unidades no Exterior</a></li>
-                    </ul>
+                </section>
+                <section class="form-section">
+
+                    <div class="container">
+                        <h1>O Caminho do Buscador</h1>
+                        <h2>Sua Jornada de Transformação e Propósito</h2>
+                        <p>
+                            Você está diante de algo que não é apenas mais um curso — é uma plataforma de evolução espiritual e filosófica 
+                            que guiará você em uma jornada profunda de 33 níveis de transformação. Este é o <strong>Caminho do Buscador</strong>, 
+                            um passo a passo criado para aqueles que buscam um propósito maior, um significado verdadeiro para suas vidas.
+                        </p>
+                
+                        <h2>O que é O Caminho do Buscador?</h2>
+                        <p>
+                            O <strong>Caminho do Buscador</strong> é uma plataforma de aulas online, estruturada para integrar o estudo e a prática 
+                            de forma harmoniosa. Você precisará dedicar pelo menos duas horas por semana para estudo, além de realizar práticas 
+                            diárias específicas a cada nível, alinhando teoria e prática para transformar sua mente e coração.
+                        </p>
+                
+                        <p>
+                            Mas entenda: isso não é um curso. É uma jornada de evolução intelectual e espiritual, que conduz você por um caminho 
+                            de desenvolvimento gradual. São <span class="highlight">33 níveis</span> representados por mantos de diferentes cores, 
+                            simbolizando o avanço na compreensão e transformação interior.
+                        </p>
+                
+                        <h2>A Jornada Começa com Você</h2>
+                        <p>
+                            Antes de ajudar os outros, antes de cumprir sua missão de contribuir para a libertação de todos os seres, é essencial 
+                            começar por você. Essa jornada é um chamado para:
+                        </p>
+                        <ul>
+                            <li><strong>Libertar sua mente:</strong> Romper com os condicionamentos do sofrimento e as distrações do samsara.</li>
+                            <li><strong>Desenvolver qualidades essenciais:</strong> Cultivar compaixão, sabedoria, paciência e equanimidade — as bases de uma mente plena.</li>
+                            <li><strong>Transformar-se em um agente de mudança:</strong> Com o avanço no caminho, ajudar os outros será uma consequência natural de sua própria transformação.</li>
+                        </ul>
+                
+                        <h2>Por que O Caminho do Buscador é Diferente?</h2>
+                        <p>
+                            <strong>Metodologia Completa:</strong> Este não é um programa superficial. Cada nível é cuidadosamente projetado para conduzir você a uma transformação real, unindo estudo profundo e práticas transformadoras.
+                        </p>
+                        <p>
+                            <strong>Integração da Filosofia e Prática:</strong> A cada passo, você mergulhará em ensinamentos essenciais e práticas como Shamata, Dhyan, Tonglen, Acumulação de Mantras e Sutras Mahayanas, que não só desenvolvem sua mente, mas a preparam para transformar o mundo.
+                        </p>
+                        <p>
+                            <strong>Preparação para sua Missão:</strong> O objetivo é primeiro fortalecer sua mente e coração. Com esse desenvolvimento, o desejo de ajudar os outros se tornará natural e alinhado com sua realização pessoal e espiritual.
+                        </p>
+                
+                        <h2>Compromisso com sua Transformação</h2>
+                        <p>
+                            Trilhar o Caminho do Buscador exige dedicação. Não se trata de apenas aprender, mas de vivenciar as práticas e ensinamentos. 
+                            É um compromisso com você mesmo, com sua libertação e com o propósito maior de ajudar a todos os seres.
+                        </p>
+                        <p>
+                            Ao ingressar nessa plataforma, você não estará apenas entrando para uma comunidade de buscadores com os mesmos ideais. 
+                            Estará dando o primeiro passo para transformar sua vida, libertar sua mente e encontrar o propósito que você sempre buscou.
+                        </p>
+                        <p>
+                            Este é o chamado que sua alma aguardava. Este é o início do seu verdadeiro caminho.
+                        </p>
+                    </div>
+                    </section>
+
+                    <section class="invite">
+                        <div class="cta">
+                            <h2>Transforme Sua Vida com a Plataforma Renkai</h2>
+                            <p>Convidamos você a dar o primeiro passo em sua jornada espiritual. Acesse conteúdos exclusivos, práticas guiadas e suporte para sua evolução no caminho Mahayana.</p>
+                            <button onclick="location.href='https:\/\/hotmart.com/pt-br/marketplace/produtos/o-caminho-do-buscador/J95737266S'">Assine Agora</button>
+                        </div>
+                        <div class="invite">
+                            <h1>O Caminho do Buscador</h1>
+                            <h2>Sua Jornada de Transformação e Propósito</h2>
+                            <p>
+                                Você está diante de algo que não é apenas mais um curso — é uma plataforma de evolução espiritual e filosófica 
+                                que guiará você em uma jornada profunda de 33 níveis de transformação. Este é o <strong>Caminho do Buscador</strong>, 
+                                um passo a passo criado para aqueles que buscam um propósito maior, um significado verdadeiro para suas vidas.
+                            </p>
+                    
+                            <h2>O que é O Caminho do Buscador?</h2>
+                            <p>
+                                O <strong>Caminho do Buscador</strong> é uma plataforma de aulas online, estruturada para integrar o estudo e a prática 
+                                de forma harmoniosa. Você precisará dedicar pelo menos duas horas por semana para estudo, além de realizar práticas 
+                                diárias específicas a cada nível, alinhando teoria e prática para transformar sua mente e coração.
+                            </p>
+                    
+                            <p>
+                                Mas entenda: isso não é um curso. É uma jornada de evolução intelectual e espiritual, que conduz você por um caminho 
+                                de desenvolvimento gradual. São <span class="highlight">33 níveis</span> representados por mantos de diferentes cores, 
+                                simbolizando o avanço na compreensão e transformação interior.
+                            </p>
+                    
+                            <h2>A Jornada Começa com Você</h2>
+                            <p>
+                                Antes de ajudar os outros, antes de cumprir sua missão de contribuir para a libertação de todos os seres, é essencial 
+                                começar por você. Essa jornada é um chamado para:
+                            </p>
+                            <ul>
+                                <li><strong>Libertar sua mente:</strong> Romper com os condicionamentos do sofrimento e as distrações do samsara.</li>
+                                <li><strong>Desenvolver qualidades essenciais:</strong> Cultivar compaixão, sabedoria, paciência e equanimidade — as bases de uma mente plena.</li>
+                                <li><strong>Transformar-se em um agente de mudança:</strong> Com o avanço no caminho, ajudar os outros será uma consequência natural de sua própria transformação.</li>
+                            </ul>
+                    
+                            <h2>Por que O Caminho do Buscador é Diferente?</h2>
+                            <p>
+                                <strong>Metodologia Completa:</strong> Este não é um programa superficial. Cada nível é cuidadosamente projetado para conduzir você a uma transformação real, unindo estudo profundo e práticas transformadoras.
+                            </p>
+                            <p>
+                                <strong>Integração da Filosofia e Prática:</strong> A cada passo, você mergulhará em ensinamentos essenciais e práticas como Shamata, Dhyan, Tonglen, Acumulação de Mantras e Sutras Mahayanas, que não só desenvolvem sua mente, mas a preparam para transformar o mundo.
+                            </p>
+                            <p>
+                                <strong>Preparação para sua Missão:</strong> O objetivo é primeiro fortalecer sua mente e coração. Com esse desenvolvimento, o desejo de ajudar os outros se tornará natural e alinhado com sua realização pessoal e espiritual.
+                            </p>
+                        </div>
+                    
+                    </section>
+
+                    <section class="invite">
+                        <div class="cta">
+                            <h1>Um Santuário para a Transformação Espiritual</h1>
+                            <p>
+                                Na Renkai, acreditamos que a transformação de um indivíduo reflete em todo o mundo, e que um coração pleno de compaixão e sabedoria é capaz de iluminar incontáveis vidas. É com essa visão que sonhamos com o futuro Templo da Renkai — um espaço sagrado onde a jornada de cada buscador encontrará raízes mais profundas e asas mais fortes.
+                            </p>
+                            <p>
+                                Mais do que pedras e paredes, esse templo será um farol de inspiração, acolhendo cada pessoa que busca libertar sua mente e tocar o propósito maior de sua existência. Aqui, práticas como meditação, retiros e ensinamentos ganharão vida, criando um ambiente de renovação espiritual e de serviço à humanidade.
+                            </p>
+                            <p>
+                                Mas esse sonho não é apenas nosso. Ele é de todos que compartilham o desejo de um mundo mais compassivo, de todos que reconhecem o valor de um local que será um refúgio para almas em busca de paz e propósito.
+                            </p>
+                            <p>
+                                E aqui está o chamado: você faz parte disso.
+                            </p>
+                            <p>
+                                Cada passo que damos juntos em direção a esse templo é uma manifestação do seu coração generoso e do seu compromisso com o bem maior. Cada prática, cada gesto de compaixão, cada momento dedicado ao crescimento espiritual é um tijolo nessa construção — não apenas física, mas também espiritual.
+                            </p>
+                            <p>
+                                Unamo-nos como uma só Sangha, com a força da nossa aspiração coletiva. Este templo é mais do que um sonho: é o legado que deixaremos para o mundo e para todas as gerações que virão.
+                            </p>
+                            <p>
+                                Com o seu apoio e o de toda a comunidade, o Templo da Renkai se tornará uma realidade viva, um símbolo de tudo o que acreditamos e pelo qual trabalhamos. Vamos, juntos, erguer um lugar onde o despertar se torna possível para todos.
+                            </p>
+                        </div>
+                    </section>
+
+            <section class="form-section blog">
+                <div class="blog-container">
+                    <h1 class="blog-title">Sabedoria no Dia a Dia</h1>
+                    <p class="blog-description">Publicações regulares sobre práticas budistas, reflexões espirituais e histórias de superação dos praticantes.</p>
+
+                    <div class="posts">
+                        <div class="post">
+                            <img src="https://s2-ge.glbimg.com/ldphEVfFQRBycj2UI9xq_UQWIwY=/0x0:1258x834/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2020/h/w/HMAr8YRVud7esJTrS1PQ/meditacao.jpg" alt="Post 1">
+                            <div class="post-content">
+                                <h2 class="post-title">Meditação</h2>
+                               
+                            </div>
+                        </div>
+                        <div class="post">
+                            <img src="https://mudrassignificado.com.br/wp-content/uploads/2022/01/istockphoto-1300474227-612x612-1.jpg" alt="Post 2">
+                            <div class="post-content">
+                                <h2 class="post-title">Práticas Mahayana</h2>
+                               
+                            </div>
+                        </div>
+                        <div class="post">
+                            <img src="https://enkibook.com.br/wp-content/uploads/2024/01/DALL%C2%B7E-2024-01-03-10.38.23-A-panoramic-wide-angle-representation-of-the-Wheel-of-Samsara-a-key-concept-in-Buddhist-and-Hindu-philosophy.-The-wheel-is-elaborately-detailed-wit.webp">
+                            <div class="post-content">
+                                <h2 class="post-title">Reflexões sobre o Samsara</h2>
+                               
+                            </div>
+                        </div>
+                        <div class="post">
+                            <img src="https://jungnapratica.com.br/wp-content/uploads/2016/09/casal.-post.jpg" alt="Post 1">
+                            <div class="post-content">
+                                <h2 class="post-title">Relações amorosas</h2>
+                               
+                            </div>
+                        </div>
+                        <div class="post">
+                            <img src="https://dsop.com.br/wp-content/uploads/2024/01/62e4c7cadd3aacce450cf14c_vida-financeira.jpeg" alt="Post 1">
+                            <div class="post-content">
+                                <h2 class="post-title">Vida financeira</h2>
+                               
+                            </div>
+                        </div>
+                        <div class="post">
+                            <img src="https://innovia.com.br/blog/wp-content/uploads/2017/03/desenvolva-o-seu-equilibrio-emocional-na-vida-pessoal-e-no-trabalho.jpeg" alt="Post 1">
+                            <div class="post-content">
+                                <h2 class="post-title">Vida emocional</h2>
+                               
+                            </div>
+                        </div>
+                    </div>
                 </div>
+            </section>
+
+           
+            
+            <section id="faq" class="form-section">
                 <div>
-                    <h4>Blog</h4>
-                    <h4>Experiências de Fé</h4>
-                    <h4>Culto Mensal</h4>
-                    <ul>
-                        <li><a href="#">Ensinamento do Culto Mensal</a></li>
-                        <li><a href="#">Experiência do Culto Mensal</a></li>
-                        <li><a href="#">Palestra do Culto Mensal</a></li>
-                        <li><a href="#">Agenda Culto Mensal</a></li>
-                    </ul>
+                    <h1>Perguntas Frequentes - Renkai</h1>
                 </div>
-                <div>
-                    <h4>Fale Conosco</h4>
-                    <ul>
-                        <li><a href="#">Fale Conosco do Brasil</a></li>
-                        <li><a href="#">Fale Conosco do Exterior</a></li>
-                        <li><a href="#">Perguntas Frequentes</a></li>
-                        <li><a href="#">Canais Oficiais</a></li>
-                        <li><a href="#">Encontre uma Unidade</a></li>
-                    </ul>
-                    <h4>Política de Privacidade</h4>
-                    <h4>Termos de Uso</h4>
+                <div class="container">
+                    <div class="faq">
+                        <h2>1. O que é a Renkai?</h2>
+                        <p>
+                            A Renkai é um movimento filosófico e espiritual
+                            inspirado nos ensinamentos do Budismo Mahayana.
+                            Por meio da plataforma “O Caminho do Buscador”, a
+                            Renkai oferece um sistema estruturado que guia
+                            os
+                            praticantes através de 33 níveis de desenvolvimento
+                            filosófico e prático, promovendo sabedoria,
+                            compaixão e liberdade espiritual.
+                        </p>
+                    </div>
+                    <div class="faq-divider"></div>
+                    <div class="faq">
+                        <h2>2. A Renkai é uma religião?</h2>
+                        <p>
+                            A Renkai não se define como uma religião, mas como
+                            um movimento filosófico e espiritual. Apesar
+                            disso,
+                            ela respeita e acolhe pessoas de todas as religiões,
+                            acreditando que sua metodologia pode ajudar
+                            os
+                            praticantes a aprofundar a compreensão e conexão com
+                            suas próprias crenças.
+                        </p>
+                    </div>
+                    <div class="faq-divider"></div>
+                    <div class="faq">
+                        <h2>3. A Renkai acredita em Deus?</h2>
+                        <p>
+                            Na Renkai, não promovemos a crença em um Deus com
+                            forma definida, mas não condenamos essa visão.
+                            Nosso
+                            foco está na experiência direta da Vacuidade
+                            Suprema, que transcende os conceitos mentais e os
+                            sentidos.
+                            Para aqueles que acreditam em Deus, a Vacuidade
+                            Suprema pode ser vista como uma conexão profunda
+                            com o
+                            divino, baseada em compaixão e sabedoria.
+                        </p>
+                    </div>
+                    <div class="faq-divider"></div>
+                    <div class="faq">
+                        <h2>4. Como a Renkai vê Jesus Cristo?</h2>
+                        <p>
+                            Na Renkai, reconhecemos Jesus Cristo como um ser
+                            completamente iluminado que atuou como um
+                            Bodisatva na
+                            Terra. Ele dedicou sua vida a salvar outros seres,
+                            agindo com compaixão e sabedoria. Acreditamos
+                            que a
+                            salvação ensinada por Jesus está fundamentada no
+                            princípio da graça, uma manifestação da
+                            compaixão infinita
+                            da Vacuidade Suprema. Embora a Renkai foque no
+                            caminho do esforço e desenvolvimento gradual,
+                            reconhecemos que
+                            a graça é uma bênção que pode se manifestar a
+                            qualquer momento.
+                        </p>
+                        <div class="faq-divider"></div>
+                    </div>
+                    <div class="faq">
+                        <h2>5. O que é Vacuidade Suprema?</h2>
+                        <p>
+                            A Vacuidade Suprema, no contexto da Renkai, é a
+                            essência da realidade. Não é um vazio literal,
+                            mas um estado
+                            de plenitude além dos conceitos mentais e das
+                            limitações sensoriais. É a origem da compaixão,
+                            sabedoria e alegria
+                            inatas a todos os seres, acessível por meio da
+                            purificação da mente e do desenvolvimento
+                            espiritual.
+                        </p>
+                    </div>
+                    <div class="faq-divider"></div>
+                    <div class="faq">
+                        <h2>6. Qual é o objetivo do Caminho do Buscador?</h2>
+                        <p>
+                            O Caminho do Buscador é uma jornada estruturada em
+                            33 níveis que ajuda o praticante a remover os
+                            obscurecimentos
+                            da mente, alcançando estados de compaixão, alegria e
+                            sabedoria. Por meio de práticas
+                            específicas, o praticante aprende
+                            a viver em harmonia com a Vacuidade Suprema,
+                            conquistando a liberação espiritual e um
+                            entendimento mais profundo da
+                            realidade.
+                        </p>
+                    </div>
+                    <div class="faq-divider"></div>
+                    <div class="faq">
+                        <h2>7. O que é a liberação espiritual na Renkai?</h2>
+                        <p>
+                            A liberação espiritual na Renkai é a conquista de um
+                            estado em que o praticante não está mais
+                            sujeito às flutuações
+                            da mente. Nesse estado, compaixão, alegria e
+                            sabedoria — qualidades inatas a todos os seres —
+                            emergem naturalmente,
+                            uma vez que os obscurecimentos da mente são
+                            removidos por meio das práticas de purificação e
+                            desenvolvimento espiritual.
+                        </p>
+                    </div>
+                    <div class="faq-divider"></div>
+                    <div class="faq">
+                        <h2>8. Como a Renkai enxerga as outras religiões?</h2>
+                        <p>
+                            A Renkai não substitui ou conflita com outras
+                            religiões. Pelo contrário, ela oferece ferramentas
+                            para que os praticantes
+                            aprofundem sua compreensão e vivência espiritual em
+                            suas próprias tradições, ajudando-os a se
+                            conectar de forma mais
+                            clara e compassiva com suas crenças.
+                        </p>
+                    </div>
+                    <div class="faq-divider"></div>
+                    <div class="faq">
+                        <h2>9. A Renkai tem práticas de meditação?</h2>
+                        <p>
+                            Sim, a meditação é uma das práticas centrais da
+                            Renkai. Ela é utilizada como uma ferramenta para
+                            purificar a mente,
+                            remover obscurecimentos e permitir que o praticante
+                            experimente diretamente estados de
+                            compaixão, sabedoria e alegria.
+                        </p>
+                    </div>
+                    <div class="faq-divider"></div>
+                    <div class="faq">
+                        <h2>10. O que são os obscurecimentos da mente?</h2>
+                        <p>
+                            Os obscurecimentos da mente, segundo a filosofia
+                            budista seguida pela Renkai, são camadas de
+                            confusão, apego e ignorância
+                            que nos impedem de perceber a realidade como ela é.
+                            Esses obscurecimentos nos afastam da
+                            Vacuidade Suprema, e o caminho
+                            proposto pela Renkai tem como objetivo removê-los
+                            por meio de práticas de purificação, meditação
+                            e desenvolvimento ético.
+                        </p>
+                    </div>
+                    <div class="faq-divider"></div>
+                    <div class="faq">
+                        <h2>11. Como a Renkai vê o conceito de “pecado” em
+                            relação aos ensinamentos budistas sobre os
+                            obscurecimentos da mente?</h2>
+                        <p>
+                            O conceito de “pecado” no cristianismo está
+                            relacionado à desobediência às leis divinas, sendo
+                            visto como algo que afasta
+                            o ser humano do Criador. No entanto, na Renkai,
+                            adotamos uma perspectiva baseada nos
+                            ensinamentos filosóficos budistas,
+                            que falam sobre os “obscurecimentos da mente”. Esses
+                            obscurecimentos não são julgamentos morais,
+                            mas distorções de percepção
+                            que nos afastam da verdadeira natureza da realidade,
+                            que é a Vacuidade Suprema — um estado de
+                            compaixão, sabedoria e interconexão.
+                            No caminho da Renkai, buscamos remover esses
+                            obscurecimentos através das práticas de
+                            purificação, como a meditação, a reflexão
+                            ética e o cultivo da compaixão, permitindo-nos nos
+                            aproximar de nossa natureza inata e de uma
+                            vida plena e harmoniosa com a realidade.
+                        </p>
+                    </div>
+                    <div class="faq-divider"></div>
+                    <div class="faq">
+                        <h2>12. É possível seguir o Caminho do Buscador e
+                            continuar em outra religião?</h2>
+                        <p>
+                            Sim, é perfeitamente possível. A Renkai não exige
+                            exclusividade e respeita as crenças de cada
+                            indivíduo. O Caminho do Buscador
+                            é uma metodologia prática que complementa a vivência
+                            espiritual de qualquer tradição, ajudando
+                            os praticantes a compreenderem
+                            melhor suas próprias religiões.
+                        </p>
+                    </div>
+                    <div class="faq-divider"></div>
+                    <div class="faq">
+                        <h2>13. O que significa “caminho do esforço” na
+                            Renkai?</h2>
+                        <p>
+                            Na Renkai, o “caminho do esforço” refere-se ao
+                            compromisso consciente do praticante em renovar
+                            constantemente sua motivação
+                            por meio de práticas estruturadas, como meditação,
+                            reflexão ética e desenvolvimento da compaixão
+                            e sabedoria. Esse esforço
+                            contínuo permite ao praticante trilhar um caminho
+                            claro em direção à liberação espiritual,
+                            independentemente de receber ou
+                            não a graça divina.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="form-section contact">
+                <h2>Contato</h2>
+
+                <h3>Conecte-se com a Renkai</h3>
+                <p>Para dúvidas, sugestões e suporte</p>
+
+                <a href="#" class="contact-button">Entrar em contato</a>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-logo">
+
+                    <h3>
+                        Renkai Internacional
+                    </h3>
+                    <p>
+                        Torne-se um bodhisattva autorrealizado despertando a
+                        felicidade e paz interna sem depender de nenhum
+                        fator externo através do desenvolvimento da bodichita.
+
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <div>
+                        <h4>Institucional</h4>
+                        <ul>
+                            <li><a href="#">O que é a Igreja Renkai</a></li>
+                            <li><a href="#">Nosso Fundador</a></li>
+                            <li><a href="#">Nossa Trajetória</a></li>
+                            <li><a href="#">Nossa Crença</a></li>
+                            <li><a href="#">Nossa Visão</a></li>
+                            <li><a href="#">Solos Sagrados</a></li>
+                            <li><a href="#">Escritos Divinos</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Endereços</h4>
+                        <ul>
+                            <li><a href="#">Unidades no Brasil</a></li>
+                            <li><a href="#">Unidades no Exterior</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Blog</h4>
+                        <h4>Experiências de Fé</h4>
+                        <h4>Culto Mensal</h4>
+                        <ul>
+                            <li><a href="#">Ensinamento do Culto Mensal</a></li>
+                            <li><a href="#">Experiência do Culto Mensal</a></li>
+                            <li><a href="#">Palestra do Culto Mensal</a></li>
+                            <li><a href="#">Agenda Culto Mensal</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Fale Conosco</h4>
+                        <ul>
+                            <li><a href="#">Fale Conosco do Brasil</a></li>
+                            <li><a href="#">Fale Conosco do Exterior</a></li>
+                            <li><a href="#">Perguntas Frequentes</a></li>
+                            <li><a href="#">Canais Oficiais</a></li>
+                            <li><a href="#">Encontre uma Unidade</a></li>
+                        </ul>
+                        <h4>Política de Privacidade</h4>
+                        <h4>Termos de Uso</h4>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="footer-bottom">
-            <p>SOBRE A LGPD, ENTRE EM CONTATO: <a href="mailto:dpo@renkai.org.br">dpo@renkai.org.br</a></p>
-            <p>&copy; 2025 Renkai Internacional - Todos os direitos reservados</p>
-            <div class="social-icons">
-                <a href="#"><i class="fa-solid fa-envelope"></i></a>
-                <a href="#"><i class="fa-brands fa-facebook"></i> </a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.tiktok.com/@renkai.internacional"><i class="fa-brands fa-tiktok"></i></a>
+            <div class="footer-bottom">
+                <p>SOBRE A LGPD, ENTRE EM CONTATO: <a
+                        href="mailto:dpo@renkai.org.br">dpo@renkai.org.br</a></p>
+                <p>&copy; 2025 Renkai Internacional - Todos os direitos
+                    reservados</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i> </a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@renkai.internacional"><i
+                            class="fa-brands fa-tiktok"></i></a>
+                </div>
             </div>
-        </div>
-    </footer>
-    
-    <script src="./index.js"></script>
-</body>
+        </footer>
+
+        <script src="./index.js"></script>
+    </body>
+
 </html>

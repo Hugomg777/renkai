@@ -15,7 +15,13 @@ body {
     margin: 0;
     padding: 0;
     color: var(--text-color);
+    font-size: 1.8rem;
     background-color: var(--background-color);
+}
+
+body main {
+    max-width: 90vw;
+    margin: 0 auto;
 }
 
 header {
@@ -66,7 +72,7 @@ main {
 
 .form-section {
     text-align: center;
-    margin: 20px auto;
+    margin: 20px auto 70px;
 }
 
 .form-section h2 {
@@ -208,7 +214,7 @@ main {
 
 .testimonial-section {
     max-width: 900px;
-    margin: 50px auto;
+    margin: 150px auto;
     padding: 20px;
     text-align: center;
 }
@@ -256,6 +262,10 @@ main {
     border-radius: 5px;
 }
 
+section#about {
+    margin: 0px auto 100px;
+}
+
 .main-header {
     background-color: #006400;
     color: white;
@@ -269,7 +279,7 @@ main {
 }
 
 .content {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 20px auto;
     padding: 20px;
     background: #fff;
@@ -309,12 +319,12 @@ main {
 .conclusion p {
     text-align: justify;
     margin-top: 20px;
-    font-size: 1rem;
+    font-size: 1.8rem;
     line-height: 1.8;
 }
    
 .container {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 20px auto;
     padding: 20px;
     background-color: white;
@@ -331,7 +341,7 @@ main {
     cursor: pointer;
 }
 .faq p {
-    font-size: 16px;
+    font-size: 1.8rem;
     margin: 0;
     display: none;
     transition: all 0.3s ease;
@@ -355,6 +365,175 @@ main {
     border-radius: 5px;
     margin-top: 20px;
     transition: background 0.3s;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+
+
+.reino {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.reino h3 {
+    color: #333;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.reino p {
+    margin: 0.5rem 0;
+    line-height: 1.6;
+}
+
+.reino strong {
+    color: #4CAF50;
+}
+
+.invite {
+    max-width: 800px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.invite h1, .invite h2 {
+    text-align: center;
+    color: #2e7d32;
+}
+.invite h1 {
+    margin-bottom: 10px;
+}
+.invite h2 {
+    margin-top: 30px;
+}
+.invite p {
+    margin: 10px 0;
+    text-align: justify;
+}
+.highlight {
+    font-weight: bold;
+    color: #2e7d32;
+}
+.cta {
+    text-align: center;
+    margin: 30px 0;
+    background-color: #e8f5e9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.cta h2 {
+    color: #1b5e20;
+    margin-bottom: 15px;
+}
+.cta p {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    color: #4caf50;
+}
+.cta button {
+    background-color: #2e7d32;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.cta button:hover {
+    background-color: #1b5e20;
+}
+
+.blog-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+.blog-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+.blog-description {
+    font-size: 1em;
+    margin-bottom: 30px;
+    color: #555;
+}
+.categories {
+    margin-bottom: 20px;
+}
+.categories h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+.categories ul {
+    list-style: none;
+    padding: 0;
+}
+.categories ul li {
+    font-size: 1em;
+    margin: 5px 0;
+}
+.posts {
+    display: flex;
+    gap: 20px;
+    overflow-x: scroll;
+}
+
+.posts::-webkit-scrollbar { 
+	display: none;
+}
+
+.post {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    max-width: 30%;
+    min-width: 280px;
+}
+
+.post:hover {
+    cursor: pointer;
+    margin-top: -4px;
+}
+
+.post img {
+    width: 100%;
+    height: auto;
+}
+.post-content {
+    padding: 15px;
+}
+.post-title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+.post-text {
+    font-size: 0.9em;
+    margin-bottom: 15px;
+}
+.post-date {
+    font-size: 0.8em;
+    color: #777;
+    margin-bottom: 10px;
 }
 
 
@@ -409,15 +588,15 @@ main {
     }
 
     .faq h2 {
-        font-size: 16px;
+        font-size: 1.8rem;
     }
 
     .faq p {
-        font-size: 14px;
+        font-size: 1.8rem;
     }
 
     .contact-button {
-        font-size: 1rem;
+        font-size: 1.8rem;
         padding: 8px 16px;
     }
 }
