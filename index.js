@@ -33,24 +33,15 @@ document.getElementById('next').addEventListener('click', () => {
     testimonials[currentIndex].classList.add('active');
 });
 
+
 document.getElementById('prev').addEventListener('click', () => {
     testimonials[currentIndex].classList.remove('active');
     currentIndex = (currentIndex - 1 + testimonials.length) % testimonials.length;
     testimonials[currentIndex].classList.add('active');
+    
 });
 
 
-// perguntas frequentes
-document.querySelectorAll('.accordion-header').forEach(header => {
-    header.addEventListener('click', () => {
-        const content = header.nextElementSibling;
-        content.classList.toggle('open');
 
-        // Close other open items
-        document.querySelectorAll('.accordion-content').forEach(item => {
-            if (item !== content) {
-                item.classList.remove('open');
-            }
-        });
-    });
-});
+
+
