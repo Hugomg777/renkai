@@ -195,15 +195,16 @@ main {
     margin-top: 10px;
 }
 
+.social-icons a {
+    font-size: 30px;
+    margin: 0 10px;
+}
+
 .social-icons a i {
     width: 24px;
     height: 24px;
     margin: 0 5px;
 }
-
-
-
-
 
 .testimonial-section {
     max-width: 900px;
@@ -253,17 +254,6 @@ main {
     margin: 0 5px;
     cursor: pointer;
     border-radius: 5px;
-}
-
-/*bodichita */
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f9;
-    color: #333;
 }
 
 .main-header {
@@ -322,53 +312,112 @@ body {
     font-size: 1rem;
     line-height: 1.8;
 }
-
-
-/*perguntas frequentes*/
-                    body {
-                        font-family: Arial, sans-serif;
-                        line-height: 1.8;
-                        margin: 0;
-                        padding: 0;
-                        background-color: #f9f9f9;
-                        color: #333;
-                    }
-                    header {
-                        background-color: #4CAF50;
-                        color: white;
-                        padding: 20px;
-                        text-align: center;
-                    }
-                    .container {
-                        max-width: 800px;
-                        margin: 20px auto;
-                        padding: 20px;
-                        background-color: white;
-                        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-                        border-radius: 8px;
-                    }
-                    .faq {
-                        margin-bottom: 20px;
-                    }
-                    .faq h2 {
-                        font-size: 18px;
-                        color: #4CAF50;
-                        margin-bottom: 10px;
-                        cursor: pointer;
-                    }
-                    .faq p {
-                        font-size: 16px;
-                        margin: 0;
-                        display: none;
-                        transition: all 0.3s ease;
-                    }
-                    .faq.active p {
-                        display: block;
-                        margin-top: 10px;
-                    }
-                    .faq-divider {
-                        border-top: 1px solid #ddd;
-                        margin: 20px 0;
-                    }
+   
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+.faq {
+    margin-bottom: 20px;
+}
+.faq h2 {
+    font-size: 18px;
+    color: #4CAF50;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.faq p {
+    font-size: 16px;
+    margin: 0;
+    display: none;
+    transition: all 0.3s ease;
+}
+.faq.active p {
+    display: block;
+    margin-top: 10px;
+}
+.faq-divider {
+    border-top: 1px solid #ddd;
+    margin: 20px 0;
+}
               
+.contact-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #006400;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background 0.3s;
+}
 
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header .logo {
+        margin-bottom: 10px;
+    }
+
+    header .logo span {
+        display: none;
+    }
+
+    header nav ul {
+        gap: 10px;
+        margin: 0 auto;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-links {
+        flex-direction: column;
+    }
+
+    .footer-links div {
+        flex: 1 1 100%;
+        margin: 10px 0;
+        border-right: none;
+    }
+
+    .footer-links > div:not(:last-child) {
+        border-bottom: 1px solid #0a580a;
+        border-right: unset;
+    }
+
+    .content {
+        padding: 10px;
+    }
+
+    .testimonial-section {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .faq h2 {
+        font-size: 16px;
+    }
+
+    .faq p {
+        font-size: 14px;
+    }
+
+    .contact-button {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+}
