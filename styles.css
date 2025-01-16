@@ -10,12 +10,16 @@
     --footer-text-color: #ffffff;
 }
 
+html {
+    font-size: 100%;
+}
+
 body {
     font-family: "League Spartan", serif;
     margin: 0;
     padding: 0;
     color: var(--text-color);
-    font-size: 1.8rem;
+    font-size: 1rem;
     background-color: var(--background-color);
 }
 
@@ -26,7 +30,7 @@ body main {
 
 header {
     background: var(--background-color);
-    border-bottom: 2px solid var(--border-color);
+    border-bottom: 2px solid #cccccc30;
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
@@ -64,6 +68,13 @@ header nav ul li a {
     text-decoration: none;
     color: var(--text-color);
     font-weight: bold;
+    font-size: 1rem;
+}
+
+header nav ul li a:hover {
+    border-bottom: 1px solid #E1B85B;
+    color: #E1B85B;
+    transition: .2s ease;
 }
 
 main {
@@ -319,8 +330,6 @@ section#about {
 .conclusion p {
     text-align: justify;
     margin-top: 20px;
-    font-size: 1.8rem;
-    line-height: 1.8;
 }
    
 .container {
@@ -553,6 +562,11 @@ section#about {
 }
 
 @media screen and (max-width: 768px) {
+    body main {
+        max-width: 100%;
+        padding: 0;
+    }
+
     header {
         flex-direction: column;
         align-items: flex-start;
@@ -569,6 +583,18 @@ section#about {
     header nav ul {
         gap: 10px;
         margin: 0 auto;
+    }
+
+    .form-section h2 {
+        font-size: 1.2rem;
+    }
+
+    .form-section ul li {
+        font-size: 1rem;
+    }
+
+    .conclusion p {
+        font-size: 1rem;
     }
 
     .footer-container {
@@ -603,7 +629,7 @@ section#about {
     }
 
     .faq h2 {
-        font-size: 1.8rem;
+        font-size: 1rem;
     }
 
     .faq p {
@@ -611,7 +637,7 @@ section#about {
     }
 
     .contact-button {
-        font-size: 1.8rem;
+        font-size: 1rem;
         padding: 8px 16px;
     }
 }
