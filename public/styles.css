@@ -15,17 +15,12 @@ html {
 }
 
 body {
-    font-family: "League Spartan", serif;
+    font-family: "open sans", sans-serif;
     margin: 0;
     padding: 0;
     color: var(--text-color);
     font-size: 1rem;
     background-color: var(--background-color);
-}
-
-body main {
-    max-width: 90vw;
-    margin: 0 auto;
 }
 
 header {
@@ -42,20 +37,19 @@ header .logo {
     align-items: center;
 }
 
-header .logo a {
+header a.logo {
     text-decoration: none;
-    color: var(--text-color);
+    color: #F8DE8F;
 }
 
 header .logo span {
-    font-size: 22px;
-    font-weight: bold;
+    font-size: 20px;
+    font-weight: normal;
     font-family: "Roboto Condensed", serif;
 }
 
 header .logo img {
     height: 50px;
-    margin-right: 10px;
 }
 
 header nav ul {
@@ -72,7 +66,7 @@ header nav ul li {
 header nav ul li a {
     text-decoration: none;
     color: var(--text-color);
-    font-weight: bold;
+    font-weight: normal;
     font-size: 1rem;
 }
 
@@ -80,10 +74,6 @@ header nav ul li a:hover {
     border-bottom: 1px solid #E1B85B;
     color: #E1B85B;
     transition: .2s ease;
-}
-
-main {
-    padding: 20px;
 }
 
 .form-section {
@@ -229,9 +219,6 @@ main {
 }
 
 .testimonial-section {
-    max-width: 900px;
-    margin: 150px auto;
-    padding: 20px;
     text-align: center;
 }
 
@@ -355,7 +342,6 @@ section#about {
     cursor: pointer;
 }
 .faq p {
-    font-size: 1.8rem;
     margin: 0;
     display: none;
     transition: all 0.3s ease;
@@ -635,10 +621,6 @@ section#about {
 
     .faq h2 {
         font-size: 1rem;
-    }
-
-    .faq p {
-        font-size: 1.8rem;
     }
 
     .contact-button {
