@@ -6,6 +6,8 @@ const path = require("path");
 const app = express();
 const PORT = 3000;
 
+let cachedResponse = {};
+
 // logger
 app.use((req, res, next) => {
   const now = new Date().toISOString();
@@ -38,6 +40,34 @@ fs.readdirSync(viewsPath).forEach((file) => {
         });
     }
 });
+
+app.get('/banners', async (req, res) => {
+    const url = "https://api.unsplash.com/search/photos?query=temple&orientation=landscape&license=free&per_page=11&client_id=bAd1dOZxbrjCPuM-daORu6Znyngpe-NZtHwJkSIByP0";
+
+    if (cachedResponse[url]) {
+        return res.json({
+            ...cachedResponse[url],
+            cached: true
+        });
+    }
+
+    const response = await fetch(url);
+    const json = await response.json();
+
+    const mappedImages = json.results.map(result => ({
+        src: result.urls.full,
+        color: result.color,
+    }))
+
+    cachedResponse = {
+        [url]: {
+            size: mappedImages.length,
+            result: mappedImages
+        }
+    }
+
+    res.json(cachedResponse[url]);
+})
 
 app.listen(PORT, () => {
     console.log(`Server is running at http://localhost:${PORT}`);
