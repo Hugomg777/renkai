@@ -233,7 +233,12 @@ header nav ul li a:hover {
 }
 
 .testimonial {
-    display: none;
+    margin-top: 0;
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    height: 550px; 
+    display: none; 
     transition: opacity 0.5s ease-in-out;
 }
 
@@ -629,4 +634,29 @@ section#about {
     }
 }
 
-
+.menu-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Espaçamento entre os botões */
+    bottom: 10%; /* Ajuste a posição vertical */
+  }
+  
+  .menu-item {
+    background-color: #d4af37; /* Cor dourada */
+    padding: 15px 20px;
+    border-radius: 8px; /* Bordas arredondadas */
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    color: white;
+    cursor: pointer; /* Estiliza como botão */
+    transition: transform 0.2s, box-shadow 0.2s; /* Efeito de animação */
+  }
+  
+  .menu-item:hover {
+    transform: scale(1.1); /* Aumenta levemente o tamanho ao passar o mouse */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); /* Realça a sombra no hover */
+  }
+  
