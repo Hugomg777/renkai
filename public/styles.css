@@ -79,11 +79,20 @@ header nav ul li a:hover {
 .form-section {
     text-align: center;
     margin: 20px auto 70px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    justify-content: center;
+    text-align: center;
+    width: 100%;             
+    margin: 0 auto; 
 }
 
 .form-section h2 {
     color: var(--primary-color);
     font-size: 2rem;
+    text-align: center;
+    margin-right: 0px;
 }
 
 .form-section h2 span {
@@ -219,11 +228,14 @@ header nav ul li a:hover {
 }
 
 .testimonial-section {
+    max-width: 900px;
+    margin: 150px auto;
+    padding: 20px;
     text-align: center;
 }
 
 .testimonial-section h2 {
-    color: var(--primary-color);
+    color: #000000;
     margin-bottom: 20px;
 }
 
@@ -253,7 +265,7 @@ header nav ul li a:hover {
 
 .testimonial .author {
     font-weight: bold;
-    color: var(--primary-color);
+    color: rgba(0, 0, 0, 0.884);
 }
 
 .testimonial-section .slider-controls {
@@ -345,12 +357,20 @@ section#about {
     color: #4CAF50;
     margin-bottom: 10px;
     cursor: pointer;
+    display: block;      
+    line-height: 1.5;     
+    font-size: 20px;     
 }
-.faq p {
-    margin: 0;
-    display: none;
-    transition: all 0.3s ease;
+
+.faq {
+    margin: 0 0 20px 0;  
+    padding: 10px 0;    
+    border-bottom: 1px solid #ddd; 
 }
+.faq:last-child {
+    border-bottom: none;  
+}
+
 .faq.active p {
     display: block;
     margin-top: 10px;
@@ -373,8 +393,7 @@ section#about {
 }
 
 .container {
-    width: 90%;
-    max-width: 1200px;
+
     margin: 2rem auto;
     padding: 1rem;
     background: #ffffff;
@@ -638,25 +657,66 @@ section#about {
     position: relative;
     display: flex;
     justify-content: center;
-    gap: 10px; /* Espaçamento entre os botões */
-    bottom: 10%; /* Ajuste a posição vertical */
+    gap: 10px; 
+    bottom: 10%; 
   }
   
   .menu-item {
-    background-color: #d4af37; /* Cor dourada */
+    background-color: #aaaa08; 
     padding: 15px 20px;
-    border-radius: 8px; /* Bordas arredondadas */
+    border-radius: 8px; 
     text-align: center;
     font-size: 16px;
     font-weight: bold;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
     color: white;
-    cursor: pointer; /* Estiliza como botão */
-    transition: transform 0.2s, box-shadow 0.2s; /* Efeito de animação */
+    cursor: pointer; 
+    transition: transform 0.2s, box-shadow 0.2s; 
   }
   
   .menu-item:hover {
-    transform: scale(1.1); /* Aumenta levemente o tamanho ao passar o mouse */
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); /* Realça a sombra no hover */
+    transform: scale(1.1);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); 
   }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.banner {
+    position: relative;
+    text-align: center;
+}
+.banner img {
+    width: 100%;
+    height: 300px; 
+    object-fit: cover; 
+}
+.banner .title {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+a {
+    color: #ffffff;
+    text-decoration: none;
+}  
+
+.banner {
+    width: 100vw;  /* Ocupa toda a largura da tela */
+    height: 300px; /* Altura fixa (ajuste conforme necessário) */
+    overflow: hidden; /* Esconde o excesso da imagem */
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Faz a imagem preencher o espaço sem distorcer */
+    display: block;
+}
   
