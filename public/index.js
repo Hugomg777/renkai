@@ -33,6 +33,9 @@
     const testimonials = document.querySelectorAll('.testimonial');
     let currentIndex = 0;
 
+    document.querySelector("#testimonial").style.backgroundImage = "url('"+array[currentIndex]+"')";
+    document.querySelector("#testimonial").style.backgroundColor = response.result[currentIndex].color;
+
     setInterval(() => {
         testimonials[currentIndex].classList.remove('active');
         document.querySelector("#testimonial").style.backgroundImage = "url('"+array[currentIndex]+"')";
@@ -53,5 +56,20 @@
             });
         });
     });
+})();
+
+
+(() => {
+    document.querySelector('.menu-burger')
+    .addEventListener('click', () => {
+        document.querySelector('.backdrop')
+        .classList.toggle('active')
+    })
+
+    document.querySelector('.backdrop')
+    .addEventListener('click', () => {
+        document.querySelector('.backdrop')
+        .classList.toggle('active')
+    })
 })();
 

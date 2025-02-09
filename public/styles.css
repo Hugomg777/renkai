@@ -25,18 +25,17 @@ body {
 }
 
 header {
+    display: flex;
     background: var(--background-color);
     z-index: 99999;
     border-bottom: 2px solid #cccccc30;
     padding: 0 20px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     position: fixed;
     width: 100%;
     width: -webkit-fill-available;
 }
-
 header .logo {
     display: flex;
     align-items: center;
@@ -656,20 +655,69 @@ section#about {
     margin: 10px 0;
 }
 
+header .backdrop {
+    display: none;
+    position: fixed;
+    background: rgba(0,0,0,.2);
+    width: 100vw;
+    height: 100vh;
+    left: -80vh;
+    transition: .3s ease-in;
+}
+
+header .backdrop.active {
+    left: 0;
+}
+
+header .menu {
+    position: fixed;
+    height: 100vh;
+    padding: 10px 15px;
+    background: white;
+}
+
+header .menu ul {
+    list-style: none;
+    padding: 10px;
+}
+
+header .menu ul li {
+    margin: 10px 0;
+}
+
+header .menu ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+header .menu ul li a:hover {
+ color: #E1B85B;
+}
+
+.menu-burger {
+    display: none;
+    margin: auto 0;
+}
+
 @media screen and (max-width: 768px) {
     body main {
         max-width: 100%;
         padding: 0;
+        padding-top: 50px;
+    }
+
+    .menu-burger {
+        display: block;
     }
 
     header {
-        flex-direction: column;
-        align-items: flex-start;
         padding: 0 10px;
+        justify-content: space-between;
     }
 
     header nav {
         padding-bottom: 10px;
+        display: none;
     }
 
     header .logo {
@@ -679,6 +727,10 @@ section#about {
     header nav ul {
         gap: 10px;
         margin: 0 auto;
+    }
+
+    header .backdrop {
+        display: block;
     }
 
     .form-section h2 {
@@ -720,6 +772,19 @@ section#about {
         padding: 10px;
     }
 
+    .testimonial-section h2 {
+        font-size: 28px;
+        margin: 0;
+    }
+
+    .testimonial-section  p {
+        font-size: 16px;
+    }
+
+    .testimonial-section .testimonial .author {
+        font-size: 16px;
+    }
+
     .container {
         padding: 10px;
     }
@@ -735,7 +800,7 @@ section#about {
 
     .shortcuts {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);  
+        grid-template-columns: repeat(2, 1fr);  
     }
 
     .banners.grid-4 {
