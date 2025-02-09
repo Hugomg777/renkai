@@ -33,7 +33,7 @@ const viewsPath = path.join(__dirname, "views");
 fs.readdirSync(viewsPath).forEach((file) => {
     if (file.endsWith(".hbs")) {
         let routeName = file.replace(".hbs", "");
-        routeName = routeName === 'index' ? '' : routeName;
+        routeName = routeName === 'home' ? '' : routeName;
         
         app.get(`/${routeName}`, (req, res) => {
             res.render(routeName);

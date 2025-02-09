@@ -8,6 +8,7 @@
     --border-color: #ccc;
     --footer-bg-color: #004d00;
     --footer-text-color: #ffffff;
+    --white: #FFF;
 }
 
 html {
@@ -25,11 +26,15 @@ body {
 
 header {
     background: var(--background-color);
+    z-index: 99999;
     border-bottom: 2px solid #cccccc30;
-    padding: 10px 20px;
+    padding: 0 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    width: 100%;
+    width: -webkit-fill-available;
 }
 
 header .logo {
@@ -39,17 +44,17 @@ header .logo {
 
 header a.logo {
     text-decoration: none;
-    color: #F8DE8F;
+    color: #D0B164;
 }
 
 header .logo span {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: normal;
     font-family: "Roboto Condensed", serif;
 }
 
 header .logo img {
-    height: 50px;
+    height: 42px;
 }
 
 header nav ul {
@@ -65,9 +70,10 @@ header nav ul li {
 
 header nav ul li a {
     text-decoration: none;
-    color: var(--text-color);
+    color: #666;
     font-weight: normal;
-    font-size: 1rem;
+    font-size: 12px;
+    text-transform: uppercase;
 }
 
 header nav ul li a:hover {
@@ -78,7 +84,7 @@ header nav ul li a:hover {
 
 .form-section {
     text-align: center;
-    margin: 20px auto 70px;
+    padding: 20px 70px;
 }
 
 .form-section h2 {
@@ -220,11 +226,52 @@ header nav ul li a:hover {
 
 .testimonial-section {
     text-align: center;
+    background: no-repeat;
+    background-size: cover;
+    font-size: 22px;
+    height: 464px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #FFF;
+}
+
+.shortcuts {
+    position: relative;
+    bottom: 50px;
+    display: flex;
+    background: white;
+    width: min-content;
+    margin: 0 auto;
+    gap: 6px;
+}
+
+.shortcuts .shortcut {
+    padding: 8px;
+    background: #E1B85B;
+    background: linear-gradient(#E1B85B, #886c2a);
+    height: 80px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s  ease-in;
+}
+
+.shortcuts .shortcut:hover {
+    border-bottom: 3px solid red;
+}
+
+.shortcuts .shortcut a {
+    color: white;
+    text-decoration: none;
 }
 
 .testimonial-section h2 {
-    color: var(--primary-color);
+    color: var(--white);
     margin-bottom: 20px;
+    font-size: 42px;
 }
 
 .testimonial-slider {
@@ -248,7 +295,7 @@ header nav ul li a:hover {
 
 .testimonial .author {
     font-weight: bold;
-    color: var(--primary-color);
+    color: var(--white);
 }
 
 .testimonial-section .slider-controls {
@@ -263,6 +310,64 @@ header nav ul li a:hover {
     margin: 0 5px;
     cursor: pointer;
     border-radius: 5px;
+}
+
+.section-images {
+    margin-bottom: 80px;
+}
+
+.section-images .content h2 {
+    font-size: 22px;
+    border-bottom: 1px solid #DDD;
+    margin-bottom: 34px;
+    padding-bottom: 12px;
+    color: #333;
+}
+
+.section-images .content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section-images .content hr {
+    border-color: #eee;
+    margin: 16px 0;
+}
+
+.banners {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.banners.grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.banners.grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.section-images .banner {
+    background-size: cover;
+    width: auto;
+    height: 256px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: var(--white);
+}
+
+.section-images .banner.vertical {
+    height: 356px;
+}
+
+.section-images .banner:hover {
+    cursor: pointer;
+    opacity: .9;
 }
 
 section#about {
@@ -284,10 +389,6 @@ section#about {
 .content {
     max-width: 1200px;
     margin: 20px auto;
-    padding: 20px;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .content h2 {
@@ -329,8 +430,6 @@ section#about {
     margin: 20px auto;
     padding: 20px;
     background-color: white;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
 }
 .faq {
     margin-bottom: 20px;
@@ -354,11 +453,15 @@ section#about {
     border-top: 1px solid #ddd;
     margin: 20px 0;
 }
+
+.contact {
+    background: #efefef;
+}
               
 .contact-button {
     display: inline-block;
     padding: 10px 20px;
-    background: #006400;
+    background: #E1B85B;
     color: white;
     text-decoration: none;
     font-size: 1.2rem;
@@ -373,11 +476,12 @@ section#about {
     margin: 2rem auto;
     padding: 1rem;
     background: #ffffff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
 }
 
-
+.bg--section-4 {
+    background: #efefef;
+    padding: 20px;
+}
 
 .reino {
     margin-bottom: 2rem;
@@ -561,14 +665,15 @@ section#about {
     header {
         flex-direction: column;
         align-items: flex-start;
+        padding: 0 10px;
+    }
+
+    header nav {
+        padding-bottom: 10px;
     }
 
     header .logo {
         margin-bottom: 10px;
-    }
-
-    header .logo span {
-        display: none;
     }
 
     header nav ul {
@@ -626,6 +731,19 @@ section#about {
     .contact-button {
         font-size: 1rem;
         padding: 8px 16px;
+    }
+
+    .shortcuts {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);  
+    }
+
+    .banners.grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .form-section {
+        padding: 20px 0;
     }
 }
 
