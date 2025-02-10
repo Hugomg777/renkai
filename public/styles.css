@@ -24,6 +24,10 @@ body {
     background-color: var(--background-color);
 }
 
+main {
+    padding-top: 50px;
+}
+
 header {
     display: flex;
     background: var(--background-color);
