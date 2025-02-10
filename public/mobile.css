@@ -1,4 +1,115 @@
 @media screen and (max-width: 768px) {
+  body main {
+      max-width: 100%;
+      padding: 0;
+      padding-top: 50px;
+  }
+
+  .menu-burger {
+      display: block;
+  }
+
+  header {
+      padding: 0 10px;
+      justify-content: space-between;
+  }
+
+  header nav {
+      padding-bottom: 10px;
+      display: none;
+  }
+
+  header .logo {
+      margin-bottom: 10px;
+  }
+
+  header nav ul {
+      gap: 10px;
+      margin: 0 auto;
+  }
+
+  header .backdrop {
+      display: block;
+  }
+
+  .form-section h2 {
+      font-size: 1.2rem;
+  }
+
+  .form-section ul li {
+      font-size: 1rem;
+  }
+
+  .conclusion p {
+      font-size: 1rem;
+  }
+
+  .footer-container {
+      flex-direction: column;
+  }
+
+  .footer-links {
+      flex-direction: column;
+  }
+
+  .footer-links div {
+      flex: 1 1 100%;
+      margin: 10px 0;
+      border-right: none;
+  }
+
+  .footer-links > div:not(:last-child) {
+      border-bottom: 1px solid #0a580a;
+      border-right: unset;
+  }
+
+  .content {
+      padding: 10px;
+  }
+
+  .testimonial-section {
+      padding: 10px;
+  }
+
+  .testimonial-section h2 {
+      font-size: 28px;
+      margin: 0;
+  }
+
+  .testimonial-section  p {
+      font-size: 16px;
+  }
+
+  .testimonial-section .testimonial .author {
+      font-size: 16px;
+  }
+
+  .container {
+      padding: 10px;
+  }
+
+  .faq h2 {
+      font-size: 1rem;
+  }
+
+  .contact-button {
+      font-size: 1rem;
+      padding: 8px 16px;
+  }
+
+  .shortcuts {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);  
+  }
+
+  .banners.grid-4 {
+      grid-template-columns: repeat(2, 1fr);
+  }
+
+  .form-section {
+      padding: 20px 0;
+  }
+
   .banners.grid-3 {
     gap: 6px;
     display: flex;
