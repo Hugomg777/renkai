@@ -32,7 +32,6 @@ header {
     padding: 0 20px;
     display: flex;
     justify-content: space-between;
-    position: fixed;
     width: 100%;
     width: -webkit-fill-available;
 }
@@ -828,71 +827,3 @@ header .menu ul li a:hover {
         padding: 20px 0;
     }
 }
-
-.menu-container {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    gap: 10px; 
-    bottom: 10%; 
-  }
-  
-  .menu-item {
-    background-color: #aaaa08; 
-    padding: 15px 20px;
-    border-radius: 8px; 
-    text-align: center;
-    font-size: 16px;
-    font-weight: bold;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
-    color: white;
-    cursor: pointer; 
-    transition: transform 0.2s, box-shadow 0.2s; 
-  }
-  
-  .menu-item:hover {
-    transform: scale(1.1);
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); 
-  }
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
-.banner {
-    position: relative;
-    text-align: center;
-}
-.banner img {
-    width: 100%;
-    height: 300px; 
-    object-fit: cover; 
-}
-.banner .title {
-    position: absolute;
-    top: 50%;
-    left: 15%;
-    transform: translate(-50%, -50%);
-    font-size: 3rem;
-    font-weight: bold;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-}
-a {
-    color: #ffffff;
-    text-decoration: none;
-}  
-
-.banner {
-    width: 100vw;  /* Ocupa toda a largura da tela */
-    height: 300px; /* Altura fixa (ajuste conforme necessário) */
-    overflow: hidden; /* Esconde o excesso da imagem */
-}
-
-.banner img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Faz a imagem preencher o espaço sem distorcer */
-    display: block;
-}
-  
